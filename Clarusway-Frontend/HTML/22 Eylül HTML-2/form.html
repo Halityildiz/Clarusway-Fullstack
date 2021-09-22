@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- <h1>Welcome to Clarusway</h1> -->
+
+    <form action="result.html" method="get">
+        <div>
+            <label for="ad">isim</label>
+            <input type="text" name="isim" id="ad" placeholder="Lütfen adınızı giriniz.." required>
+        
+            <br>
+
+            <label for="soyad">sayad</label>
+            <input type="text" name="soyisim" id="soyad" placeholder="Soyadınızı giriniz..">
+        </div>
+        <div>
+            <label for="sifre">parola</label>
+            <input type="password" name="parola" id="sifre" placeholder="sifrenizi giriniz..">
+        </div>
+        <div>
+            <label>Cinsiyet</label><br>
+
+            <label for="gender1">Erkek</label>
+            <input type="radio" name="Cinsiyet" id="gender1" value="Erkek">
+
+            <label for="gender2">Kadın</label>
+            <input type="radio" name="Cinsiyet" id="gender2" value="Kadın"> 
+        </div>
+
+        <div>
+            <label>Favori hayvanınızı seçiniz.</label>
+            <input type="checkbox" name="animal_1" id="panda" value="Panda">
+            <label for="panda"></label>
+
+            <input type="checkbox" name="animal_2" id="balık" value="Balık">
+            <label for="balık">Balık</label>
+
+            <input type="checkbox" name="animal_3" id="unicorn" value="Unicorn">
+            <label for="unicorn">Unicorn</label>
+            </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="number" id="age" max="40" min="0">
+        </div>
+
+        <div>
+            <label for="ara">Search:</label>
+            <input type="search" name="arandı" id="ara" placeholder="ara...">
+        </div>
+        <div>
+            <label for="renk">Color:</label>
+            <input type="color" name="secilen renk" id="renk">
+        </div>
+
+
+
+<br><br><br><br><br>
+<input type="submit" value="Send">
+    </form>
+</body>
+</html>
