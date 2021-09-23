@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="result.html" method="get" name="myform">
+        <div>
+            <label for="mybrowser">Browsers:</label>
+            <input type="text" list="browsers" id="mybrowser" name="options" required>
+            <datalist id="browsers" >
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Safari"></option>
+                <option value="Opera"></option>
+                <option value="IE"></option>
+                <option value="IE8"></option>
+                <option value="IE10"></option>
+            </datalist>
+        </div>
+        <br><br>
+        <div>
+            <label for="cars">Choose a car : </label>
+            <br />
+            <select name="cars" id="cars" multiple size="4" required>
+                <option value="Porche">Porche</option>
+                <option value="Masserati" selected>Masserati</option>
+                <option value="BMW">BMW</option>
+                <option value="Tesla">Tesla</option>
+            </select>
+        </div>
+        <br><br>
+        <input type="submit" value="SEND">
+    </form>
+</body>
+</html>
