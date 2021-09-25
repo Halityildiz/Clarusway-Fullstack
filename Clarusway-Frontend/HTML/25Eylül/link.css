@@ -1,0 +1,23 @@
+a{
+    padding: 5px;
+    text-decoration: none;
+    /* border: 1px solid red; */
+    background-color: darkorange;
+    border-radius: 30px;
+    color: white;
+}
+a:hover{
+    background-color: gray;
+    color: darkorange;
+}
+a:visited{
+    color: blue;
+}
+a:active{
+    background-color: coral;
+}
+button{
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+}

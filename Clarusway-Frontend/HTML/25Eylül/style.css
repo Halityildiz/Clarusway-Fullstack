@@ -1,0 +1,28 @@
+div{
+background-color: bisque;
+padding: 50px;
+}
+
+h2{
+    background-color: chocolate;
+}
+
+#p1{
+    background-color: cyan;
+    /* margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px; */
+    width: 250px;
+    /* margin: auto;ß
+    margin-bottom: 80px; */
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 45px;
+
+}
+
+#p2{
+    background-color: chartreuse;
+    /* margin-top: 20px; */
+}
