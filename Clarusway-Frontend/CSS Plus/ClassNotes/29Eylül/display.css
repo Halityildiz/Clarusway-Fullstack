@@ -15,11 +15,8 @@ div{
 #box2{
     visibility: hidden;
 }
-#box3{
 
-}
 span{
-    /* display: block; */
     display: inline-block;
     background-color: cyan;
     margin: 5px;
