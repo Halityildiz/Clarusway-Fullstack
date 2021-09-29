@@ -1,0 +1,29 @@
+ol{
+    list-style-type: circle;
+}
+ul{
+    margin: 5px;
+    padding: 5px;
+}
+ul li{
+    border: 1px solid red;
+    border-radius: 25px;
+    color: blueviolet;
+    margin: 10px;
+    list-style-type: none;
+    background-color: lightgreen;
+    border-left: 5px solid gray;
+    color: ;
+}
+ul li:hover{
+    background-color: gray;
+}
+ul li:before{
+    content: "selam";
+}
+#div1{
+    width: 90%;
+    background-color: lightsalmon;
+    border-radius: 25px;
+    height: 300px;
+}
