@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Sing in With</h1>
+        <div id="buton">
+            <button class="facebook"><a class="facebook" href="https://www.facebook.com/"><i id="face" class="fab fa-facebook-square fa-2x"></i>Facebook</a></button>
+            <button class="google"><img src="https://img.icons8.com/color/32/000000/google-logo.png"/><a href="https://www.google.com/">Google</a></button>
+        </div>
+        <div>
+            <form id="form-control" action="" method="get">
+                <label for="name"> <span>Username</span> </label><br><br>
+                <input type="text" name="Name" id="name" required>
+            
+                <label for="password">Password <a href="">Forgot?</a></label><br><br>
+                <input type="password" name="password" id="password" required>
+               
+                <button id="signin">Sign In</button>
+                <p>Not a member?<a href="#" target="_blank">Sing up now</a></p>            
+            </form>
+        </div>
+    </div>
+</body>
+</html>
