@@ -3,145 +3,62 @@
     width: 100%;
     height: 1500px;
     margin: 25px;
-    /* position: relative; */
+    /* margin verdiğimde relative değerler kendini buna göre ayarlıyor. Yeni verilen margin değerini (0,0) orjin noktası gibi alıyor. Absolute ilk başlangıç noktasına göre işlem yapıyor. */
+  
 }
 
 #box1{
     width: 100px;
     height: 100px;
     background-color: chocolate;
-    position: relative;
-    z-index: 4;
+    position: absolute; 
+    /* absolute dediğimde margine bakmaksızın 
+    ekranın en üstünden başlayarak 250px aşağıya 
+    iniyor. diğer boxlar sanki o aradan çıkmışçasına onun yerini dolduruyor. Aslında absolute ile kendi yerini net belirlerken diğerlerini yerlerinden ediyor. Bütün düzen bozuluyor. Bu yüzden tehlikeli kullanım... */
+    top: 250px;
+    left: 400px;
 }
+
+
 #box2{
     width: 100px;
     height: 100px;
     background-color: rgb(145, 23, 156);
     border-radius: 20px;
-    /* position: relative;
-    position: fixed;
-    position: absolute; */
     position: relative;
-    bottom: 25px;
-    z-index: 5;
-
+    /* relative ile verdiğim degerlere marjin değerleri de eklenerek yerini bulunuyor. absolute ile arasındaki ikinci fark diğer boxlar sanki relative verilen boxumuz yerinden ayrılmamış gibi onun yerini doldurmuyorlar.  */
+    top: 150px;
+    left: 100px;
 }
-/* #icerde{
-    background-color: aqua;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 0px;
-} */
+
 #box3{
     width: 100px;
     height: 100px;
-    /* border-radius: 20px; */
     background-color: rgb(59, 37, 156);
-    /* position: relative;
-    top: 0px;
-    right: 100px;
-    position: fixed; */
+    position: relative;
+}
+
+#box4{
+    background-color: pink;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    /* fixed değeri girdiğimde absolute de olduğu gibi ekranın en üst noktasını 0 alarak 100 aşağısına ekranın 50 soluna kendini sabitledi. scroll barı çevirsemde ekran da aynı noktada kaldı. Ayrıca ardından gelen boxun yerini değiştirmesine sebep oldu.(Absolute ile aynı oldu)*/
+    top: 100px;
+    right: 50px;
+}
+#box5{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    position:sticky;
+    /* sticky değeri girdiğimde fixed ve absolute de olduğu gibi ekranın en üst noktasını 0 alarak yerini ayarlıyor. Ancak fixed positiondan farklı olarak scroll barı çevirdiğimde ekranla birlikte hareket ediyor positiona girdiğiniz değerlere geldiğinde ekrana yapışıyor.
+     
+    Ayrıca positiona sticky verdiğimde diğer elemanlar hiç etkilenmedi. Ancak önünde (üzerinde) box kutusu olduğundan dolayı verdiğim top değerleri halihazırda boxumuzun bulunduğu yeri geçinceye kadar uygulanamadı.*/
+    left: 100px;
+    top: 120px;
+    
     
 }
 
-
-
-.main {
-    background-color: chartreuse;
-    width: 100%;
-    height: 1500px;
-    margin: 25px;
-}
-.box1 {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-/* .box2 {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-    position: relative;
-    top: 25px;
-    left: 50px;
-} */
-/* ----------------- position relative absolute ------------------------ */
-/* .box2 {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-    position: relative;
-}
-.box3 {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-}
-.icerde {
-    width: 25px;
-    height: 25px;
-    background-color: yellow;
-    position: absolute;
-    top: 15px;
-    right: 15px;} */
-/* ---------- fixed---------- */
-/* .box2 {
-    width: 90%;
-    height: 100px;
-    background-color: gray;
-    border-radius: 20px;
-    position: fixed;
-    top: 0;
-}
-.box3 {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-} */
-/* fixed o denilen yerde kalır */
-/* ------------ sticky--------------------- */
-.box1 {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-.box2 {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-}
-.box3 {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: sticky;
-    /* bu görüntelemee alanı yani body e göre ayarlanır ve kalır */
-    border-radius: 20px;
-    top: 25px;
-    right: 0px;
-}
-/* -------- z - indeks ------------ */
-.box4 {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    position: relative;
-    z-index: 3;
-}
-.box5 {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-    position: relative;
-    bottom: 25px;
-    z-index: 2;
-}
-.box6 {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    bottom: 80px;
-    z-index: 5;
-}
