@@ -1,19 +1,19 @@
-// var a = 10;
-// var b = 2;
-// var c = 3;
+var a = 10;
+var b = 2;
+var c = 3;
 
-// console.log(a+b);
-// console.log(a-b);
-// console.log(a*b);
-// console.log(a/b);
-// console.log(a % b);
-// console.log(a % c);
-// console.log(a**c)
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a % b);
+console.log(a % c);
+console.log(a**c)
 
-// a = --b 
-// a = b--
-// console.log({b});
-// console.log({a});
+a = --b 
+a = b--
+console.log({b});
+console.log({a});
 
 
 // var c = 100+50*3
