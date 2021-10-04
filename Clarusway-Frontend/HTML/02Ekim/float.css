@@ -1,0 +1,19 @@
+#container{
+    overflow: auto;
+}
+img{
+    width: 300px;
+    float: left;
+    margin: 10px;
+    /* position: absolute; */
+}
+p{
+    background-color: burlywood;
+    overflow: auto;
+    border: 2px solid red;
+    text-align: justify;
+
+
+    clear: left;
+}
+
