@@ -1,4 +1,4 @@
-
+.DS_Store
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,node
 
@@ -172,4 +172,5 @@ dist
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,node
+Clarusway-Frontend/.DS_Store
 Clarusway-Frontend/.DS_Store
