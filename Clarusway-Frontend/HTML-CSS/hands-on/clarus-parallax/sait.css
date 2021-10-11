@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.img {
+  width: 100%;
+  object-fit: cover;
+  /* display: block; */
+}
+.container {
+  width: 80vw;
+  margin: auto;
+}
+.banner {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/bg.jpg) center/cover no-repeat fixed;
+  opacity: 0.7;
+}
+.clarusway {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: black;
+  outline: 0.4rem inset purple;
+  outline-offset: 0.5rem;
+}
+
+.fullstack {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 3rem;
+  line-height: 1.8;
+  color: #666666;
+}
+@media screen and (min-width: 700px) {
+  .clarusway {
+    padding: 2rem;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: 0.5rem inset purple;
+    outline-offset: 1rem;
+  }
+}
+.fullstack p {
+  margin-top: 1rem;
+  text-align: justify;
+}
+.bg1 {
+  background: url(./img/bg2.jpg) center/cover no-repeat fixed;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+.logo {
+  width: 30%;
+}
+.aws {
+  background: #282e34;
+  color: #dddddd;
+}
+
+.data {
+  background-image: url(./img/bg3.jpg);
+}
+.data > div {
+  background: black;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  outline: 0.2rem inset purple;
+  outline-offset: 0.15rem;
+  /*  */
+}
+
+.why {
+  background-image: url(./img/bg4.jpg);
+}
+

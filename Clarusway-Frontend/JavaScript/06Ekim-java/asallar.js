@@ -83,45 +83,46 @@
 // }
 
 
-// let n = parseInt(prompt("Enter a number:"));
-// var sonuc = true
-// for(let i = 2; i < n; i++)
-//     if ( n%i == 0 & n != 2) {
-//         console.log(`${n}, is NOT a prime number.`)
-//         break;
-//     }else {
-//         console.log(`${n}, is a prime number.`)
-// }
+let n = 47;
+var sonuc = true
+for(let i = 2; i < n; i++)
+    if ( n%i == 0 & n != 2) {
+        console.log(`${n} is NOT a prime number.`)
+        break;
+    }else {
+        console.log(`${n} is a prime number.`)
+        break;
+}
             
 
 
 
-let n;
-let sonuc = true;
+// let n;
+// let sonuc = true;
  
-    do{
-        n = prompt("Lütfen bir sayı giriniz.");
-    } while(n < 2);
+//     do{
+//         let n = prompt("Lütfen bir sayı giriniz.");
+//     } while(n < 2);
 
-    // do{
-    //     n = prompt("Lütfen bir sayı giriniz.");
-    // } while(isNaN(n) == true);
+//     // do{
+//     //     n = prompt("Lütfen bir sayı giriniz.");
+//     // } while(isNaN(n) == true);
 
-    do{
-        n = prompt("Lütfen bir sayı giriniz.");
-    } while(typeof(n) == "number");
+//     // do{
+//     //     n = prompt("Lütfen bir sayı giriniz.");
+//     // } while(typeof(n) == "number");
  
     
-    for(let i = 2; i < n; i++){
-        if(n%i == 0){
-            sonuc = false;
-            break;
-        }
-    }
+//     for(let i = 2; i < n; i++){
+//         if(n%i == 0){
+//             sonuc = false;
+//             break;
+//         }
+//     }
 
-    if(sonuc == true) {
-        console.log(n + " asal sayıdır!")
-    } else{
-        console.log(n + " asal sayı değildir!")
-    }
+//     if(sonuc == true) {
+//         console.log(n + " asal sayıdır!")
+//     } else{
+//         console.log(n + " asal sayı değildir!")
+//     }
     
