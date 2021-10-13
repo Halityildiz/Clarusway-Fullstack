@@ -9,16 +9,16 @@
 // console.log(indices);
 
 
-// let str = 'Lorem ipsum dolor adalet amet consectetur adipisicing elit. Cupiditate numquam, minima soluta beatae a quas aliquam ex distinctio exercitationem illo adalet autem quod vitae. Repellat quasi ab dolorum, doloremque laudantium unde cum doloribus! Officiis delectus nulla error suscipit debitis incidunt. Accusamus aliquid odio inventore adalet nemo ea qui quam neque non? Nisi voluptas alias tempore numquam harum voluptatum ab laborum ea ipsum officia quisquam, maxime fugit animi eaque soluta molestiae, eum adalet ipsam impedit corrupti dolorem odio, cumque labore? Quod odit, sunt a itaque quisquam officiis blanditiis at dolorem, repudiandae dignissimos ipsam voluptatem incidunt. Suscipit adalet sunt optio corrupti eveniet beatae consequatur, impedit laboriosam eos mollitia, exercitationem rerum ipsum? Harum quidem ut, ea error modi nesciunt iste dolorum voluptates voluptate a, sit aut';
-// const myArr = str.split(" ");
-// let strAdalet = 'adalet';
-// let indexAdalet = [];
-//   for (let i = 0; i < myArr.length; i++) {
-//     if (myArr[i] === strAdalet){
-//       indexAdalet.push(i);    
-//     }
-//   }
-// console.log(indexAdalet);
+let str = 'Lorem ipsum dolor adalet amet consectetur adipisicing elit. Cupiditate numquam, minima soluta beatae a quas aliquam ex distinctio exercitationem illo adalet autem quod vitae. Repellat quasi ab dolorum, doloremque laudantium unde cum doloribus! Officiis delectus nulla error suscipit debitis incidunt. Accusamus aliquid odio inventore adalet nemo ea qui quam neque non? Nisi voluptas alias tempore numquam harum voluptatum ab laborum ea ipsum officia quisquam, maxime fugit animi eaque soluta molestiae, eum adalet ipsam impedit corrupti dolorem odio, cumque labore? Quod odit, sunt a itaque quisquam officiis blanditiis at dolorem, repudiandae dignissimos ipsam voluptatem incidunt. Suscipit adalet sunt optio corrupti eveniet beatae consequatur, impedit laboriosam eos mollitia, exercitationem rerum ipsum? Harum quidem ut, ea error modi nesciunt iste dolorum voluptates voluptate a, sit aut';
+const myArr = str.split(" ");
+let strAdalet = 'adalet';
+let indexAdalet = [];
+  for (let i = 0; i < myArr.length; i++) {
+    if (myArr[i] === strAdalet){
+      indexAdalet.push(i);    
+    }
+  }
+console.log(indexAdalet);
 
 
 let str = 'Lorem? ipsum dolor adalet amet consectetur adipisicing elit? Cupiditate numquam, minima soluta be?atae a quas aliquam ex distinctio exercitationem illo adalet autem quod vitae. Repellat quasi ab dolorum, doloremque laudantium unde cum doloribus! Officiis delectus nulla error suscipit debitis incidunt. Accusamus? aliquid odio? inventore adalet nemo ea qui quam neque non? Nisi voluptas alias tempore numquam harum voluptatum ab laborum ea ipsum officia quisquam, maxime fugit animi eaque soluta molestiae, eum adalet ipsam impedit corrupti dolorem odio, cumque labore? Quod odit, sunt a itaque quisquam? officiis blandi?tiis at dolorem, repudiandae dignissimos ipsam voluptatem incidunt. Suscipit adalet sunt optio corrupti eveniet beatae consequatur, impedit laboriosam eos mollitia, exercitationem rerum ipsum? Harum quidem ut, ea error modi nesciunt iste dolorum voluptates voluptate a, sit aut';
