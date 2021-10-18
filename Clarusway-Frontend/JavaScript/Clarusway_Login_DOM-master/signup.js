@@ -103,4 +103,4 @@ let pathSelectBox = document.querySelector("#paths");
 //foreach
 pathList.forEach((element)=>{
     pathSelectBox.innerHTML += `<option>${element}</option>`
-});
+})
