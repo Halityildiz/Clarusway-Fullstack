@@ -104,3 +104,10 @@ let pathSelectBox = document.querySelector("#paths");
 pathList.forEach((element)=>{
     pathSelectBox.innerHTML += `<option>${element}</option>`
 })
+
+const pathList = ["Fullstack", "Aws", "data Science", "Cyber Security"];
+let html = ``;
+pathList.forEach(item => {
+  html += `<option value=“${item}“>${item}</option>`;
+});
+pathSelectBox.innerHtml = html;
