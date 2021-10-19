@@ -14,7 +14,7 @@ section img{
 
 main{
     display: grid;
-    grid-template-columns: 465px 320px;
+    grid-template-columns: 420px 320px;
     justify-content: center;    
 }
 section{
@@ -70,7 +70,7 @@ span{
     font-size: 12px;
 }
 .total-price{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .total {    
@@ -83,16 +83,18 @@ span{
 .total p {
     display: block;
     width: 50%;
+    margin-bottom: 8px;
     
 }
 .total p:nth-child(2) {
     text-align: right;
+    margin-bottom: 8px;
 }
 
 header{
     font-weight: bold;
     text-align: center;
-    margin: 30px 0 30px;
+    margin: 16px 0 32px;
 }
 
 footer button{
@@ -111,28 +113,18 @@ footer button{
 form {    
     position: relative;
     width: 80%;
+    display: block;
 }
 .reminder input{
     display: inline-block;
     width: 16px;
     height: 16px;
-
-    
+    margin-top: 15px;    
 }
 .reminder label{
     display: inline-block;
     font-size: 12px;
-    height: 32px;
 }
-
-form{
-    display:flex;
-    flex-direction: column;
-    position: relative;
-    height: px;
-    
-}
-
 form h1{
     font-size: 18px;
     font-weight: 700;
@@ -142,24 +134,17 @@ form select{
     width: 110px;    
     border-radius: 5px;    
     height: 32px;
-    padding-left: 30px;
+    padding-left: 25px;
     border: 1px solid #828282;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    display: inline-block;
-    
+    display: inline-block;    
 }
-form{
-    position: relative;
-    display: block;
-}
-
 form label{
     font-size: 12px;
     color: #4f4f4f;
-    
+    margin: 8px auto;
 }
-
 form input{
     border-radius: 5px;
     width: 372px;
@@ -176,7 +161,30 @@ form i{
     font-weight: 900;
     position: relative;
     font-size: 16px;
-    top: -25px;   
+    top: -30px;   
     left:2%;   
 }
 
+.user1,
+.user2{
+    display: inline-block;
+}
+.user1{
+    margin-right: 10px;    
+}
+
+#user-postal-code{
+    width: 200px;
+}
+.user1 i,
+.user2 i{
+    position: relative;
+    top: 56px;
+    left:5px;
+}
+.user input{
+    margin: 5px 0px;
+}
+.shipping h1{
+    margin: 30px 0px 10px;    
+}
