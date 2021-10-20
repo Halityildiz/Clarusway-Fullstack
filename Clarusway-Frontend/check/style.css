@@ -188,3 +188,24 @@ form i{
 .shipping h1{
     margin: 30px 0px 10px;    
 }
+
+@media screen and (max-width: 760px) {
+    main, footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form input{
+        width: 320px;
+        height: 32px;
+        padding-left: 35px;       
+    }
+    form i{
+        position: relative;     
+        top: 0px;   
+        left: -315px;   
+    }
+    section{
+        margin-left: -60px;
+    }
+}

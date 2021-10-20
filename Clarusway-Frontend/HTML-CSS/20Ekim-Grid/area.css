@@ -1,0 +1,39 @@
+#container{
+    display: grid;
+    grid-template-columns: 100px 300px 100px;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main section"
+    "footer footer footer";
+}
+​
+.content{
+    background-color:darkorange;
+    border: 1px solid;
+}
+​
+.content1{
+    grid-area: header;
+    background-color: olive;
+}
+​
+.content2{
+    background-color: coral;
+    grid-area: sidebar;
+}
+​
+.content9{
+    background-color: crimson;
+    grid-area: main;
+}
+​
+.content7{
+    background-color: lime;
+    grid-area: section;
+}
+​
+.content8{
+    background-color: purple;
+    grid-area: footer;
+}
