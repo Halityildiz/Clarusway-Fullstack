@@ -48,3 +48,4 @@ function a(color){
   return color;
 }
 console.log(a("blue"));
+
