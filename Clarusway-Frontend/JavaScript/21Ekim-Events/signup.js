@@ -1,23 +1,55 @@
-let lastNameInput = document.getElementsByName("last_name")[0];
+// let lastNameInput = document.getElementsByName("last_name")[0];
+// console.log(lastNameInput);
+
+// let span = document.querySelector("#charCount");
+// console.log(span);
+
+// const showRemainChar = () => {
+//     span.innerText = lastNameInput.value.length + "/40";
+// }
+
+// lastNameInput.addEventListener("keyup", showRemainChar);
+
+// let date = document.getElementsByName("birthday")[0];
+// date.addEventListener("change", ()=>{
+//     alert(date.value);
+// });
+
+// let selectBox = document.querySelector("#paths");
+// const getSelectedItem = () =>{
+//     let selectedName = selectBox.options[selectBox.selectedIndex].innerText;
+//     alert(selectedName);
+// }
+// selectBox.onchange = getSelectedItem;
+
+
+
+let lastNameInput = document.getElementsByName("first_name")[0];
 console.log(lastNameInput);
 
 let span = document.querySelector("#charCount");
 console.log(span);
 
-const showRemainChar = () => {
-    span.innerText = lastNameInput.value.length + "/40";
-}
+const showRemainChar = ()=>{
+    span.innerText = lastNameInput.value.lenght + "/40";
+};
 
-lastNameInput.addEventListener("keyup", showRemainChar);
+lastNameInput.addEventListener("keyup", showRemainChar)
 
 let date = document.getElementsByName("birthday")[0];
-date.addEventListener("change", ()=>{
+date.addEventListener("change", ()=> {
     alert(date.value);
 });
 
+// let paths = document.querySelector("#paths");
+// paths.addEventListener("change", ()=> {
+//     alert(paths.options[paths.selectedIndex].innerText);
+// });
+
+
 let selectBox = document.querySelector("#paths");
-const getSelectedItem = () =>{
+const getSelectedItem = ()=>{
     let selectedName = selectBox.options[selectBox.selectedIndex].innerText;
     alert(selectedName);
-}
-selectBox.onchange = getSelectedItem;
+};
+selectBox.onchange = getSelectedItem

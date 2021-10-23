@@ -38,13 +38,28 @@ navbarItem2.addEventListener("mouseout", ()=>{
     navbarItem2.style.fontSize = "1.7rem";
 });
 
-const randomNumber = () => {
-   return Math.round(Math.random()*255);
-};
-const randomColor = ()=> {
-    return `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
-}
-console.log(randomColor);
-navbarItem3.addEventListener("click", ()=> {
+// const randomNumber = () => {
+//    return Math.round(Math.random()*255);
+// };
+// const randomColor = ()=> {
+//     return `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
+// }
+// console.log(randomColor);
+// navbarItem3.addEventListener("click", ()=> {
+//     navbarItem3.style.backgroundColor = randomColor();
+// });
+
+
+const randomNumber = () => Math.round(Math.random()*255);
+const randomColor = ()=> `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
+navbarItem3.addEventListener("click", (e)=> {
+    // e.stopPropagation();
     navbarItem3.style.backgroundColor = randomColor();
+});
+
+navbarItem3.parentElement.addEventListener("click", ()=>{
+    navbarItem3.parentElement.style.backgroundColor=randomColor();
+});
+navbarItem3.parentElement.parentElement.addEventListener("click", ()=>{
+    navbarItem3.parentElement.parentElement.style.backgroundColor=randomColor();
 });
