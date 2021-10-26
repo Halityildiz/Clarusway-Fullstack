@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.header{
+    background-color: gray;
+    border-bottom:2px solid #e723a6;
+    padding: 30px 0;
+    color: white;    
+}
+.a {
+    color: #e723a6;
+    text-decoration: none;
+    padding-right: 30px;    
+    font-weight: 300;
+    line-height: 3;    
+}
+.h1 h1{
+   
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.navhome{
+    color: #dd1e9d;
+}
+.navabout{
+    color:white;
+    justify-items:center;
+}
+.navservice{
+    color:whitesmoke;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prof{
+    background-image: url(./img/showcase.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 400px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0px 6%;
+}
+.prof h1{
+    font-size: 50px;
+    padding: 100px 0px 20px;
+    line-height: 1.5;
+}
+
+.subs{
+    height: 100px;
+    background-color: #35424a;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    align-items: center;  
+}
+.subs h1{ 
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #ffffff;    
+}
+#email{
+    font-size: 14px;
+    line-height: 25px;
+    padding: 4px;
+    width: 250px;
+    margin: right 5px;
+}
+#submit{
+    font-size: 14px;
+    line-height: 25px;
+    padding: 6px 20px;
+    background-color: #E44D27;
+    color: #ffffff;
+    border: 1px;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 20px 40px;
+    text-align: center;
+}
+
+.logo img{
+    width: 100px;
+    margin: 20px 0px;    
+}
+.logo p{
+    margin: 30px 8px;
+}
+
+.footer{
+    display: block;   
+    padding: 40px;
+    background-color: #35424a;
+    color:#ffffff;
+    text-align: center;
+   font-size: 20px;
+}
+/*about seife*/
+.about{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    margin: 30px 40px;
+    font-size: 15px;
+    line-height: 1.5;   
+}
+.content2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    margin-left: 50px;
+}
+.content3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 15px 15px 0px;
+    margin-top: 20px;
+    height: auto;
+}
+.bos{
+    height: 406px;
+}
+.services{
+    display: grid;
+    grid-template-columns: 65% 30%;
+    grid-template-rows: auto;
+    margin: 20px 40px;
+    font-size: 15px;
+    line-height: 1.5;
+    row-gap: 5px;
+    column-gap: 5%;    
+}
+
+.content4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+.content5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.content6{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.content7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid #cccccc;
+    background-color: #e6e6e6;
+    padding: 30px 20px; 
+}
+.content8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    height: 300px;
+}
+
+
+
+   
+
+
+   
+
+
+.quote input,
+.quote textarea{
+    border: 2px inset #767676;
+    padding: 5px;
+    font-size: 13.33px;
+    width: 100%;
+}
+.quote button{
+    width: 70px;
+    height: 38px;
+    background-color: #E44D27;
+    color: #ffffff;
+    border: 2px solid #35424a;
+}
