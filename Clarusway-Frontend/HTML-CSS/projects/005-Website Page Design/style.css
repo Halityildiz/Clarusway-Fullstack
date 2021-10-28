@@ -6,7 +6,7 @@
 }
 
 .header{
-    background-color: gray;
+    background-color: rgb(99, 87, 87);
     border-bottom:2px solid #e723a6;
     padding: 30px 0;
     color: white;    
@@ -191,8 +191,6 @@
     padding: 15px;
     height: 300px;
 }
-
-
 
    
 
