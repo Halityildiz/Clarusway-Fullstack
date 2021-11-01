@@ -47,8 +47,6 @@ form.addEventListener('submit', e => {
                               <td>${book.author}</td>
                               <td>${book.isbn}</td>
                               <td><button type="button" class="btn btn-danger">Delete</button></td>
-
-
             </tr>
     `;
   }
