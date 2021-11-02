@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+}
+
+$primarycolor: green;
+
+body{
+  background-color: $primarycolor;
+
+}
+div{
+  background-color: coral;
+  p{
+    color: white;
+  }
+}
+// div p {
+//   color: white;
+// }
+

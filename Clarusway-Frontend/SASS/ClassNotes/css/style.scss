@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+};
+
+$primarycolor: green;
+$textcolor:#fff;
+$btnColor: brown;
+
+body{
+  background-color: $primarycolor;
+
+};
+div{
+  background-color: coral;
+  p{
+    color: $textcolor;
+  };
+};
+ nav{
+   background-color: darkorange;
+ }
+ .left{
+   float: left;
+   list-style: none;
+   li{
+     display: inline-block;
+     &:first-child{
+       font-size: 35px;
+     }
+   }
+ }
+ .clearfix::after{
+   clear: both;
+   content: "";
+   display: block;
+ };
+
+ .right{
+   float: right;
+ };
+
+ .cw, .linkedin{
+   padding: 15px;
+   color: $textcolor;
+   display: inline-block;
+   background-color: brown;
+   border-radius: 15px;
+   text-transform: uppercase;
+   text-decoration: none;
+ };
+
+ .cw, .linkedin{
+  &:link{
+    background-color: $btnColor;
+  }
+  &:hover{
+    background-color: lighten($btnColor, 20%);
+  }
+ }
+//  .left li{
+//    display: inline-block;
+//  }
+
+//  li:first-child{
+//    font-size: 35px;
+//  }
