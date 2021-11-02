@@ -1,11 +1,8 @@
 *{
     margin:0px
     };
-    $primarycolor:rgb(137, 235, 137);
-    $textcolor:#fff;
-    body{
-        background-color: $primarycolor;
-    };
+    
+
     nav{
         background-color: darkorange;
     }

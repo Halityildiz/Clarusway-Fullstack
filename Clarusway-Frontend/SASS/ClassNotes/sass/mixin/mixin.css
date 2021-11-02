@@ -1,0 +1,66 @@
+.kutu {
+  float: left;
+  padding: 10px 15px;
+  background-color: blue;
+  color: yellow;
+}
+
+.b-1 {
+  width: 1px;
+}
+
+.b-2 {
+  width: 2px;
+}
+
+.b-3 {
+  width: 3px;
+}
+
+.b-4 {
+  width: 4px;
+}
+
+.b-5 {
+  width: 5px;
+}
+
+.harvey1 {
+  width: 100px;
+}
+
+.harvey2 {
+  width: 200px;
+}
+
+.harvey3 {
+  width: 300px;
+}
+
+.harvey4 {
+  width: 400px;
+}
+
+.harvey5 {
+  width: 500px;
+}
+
+.j-1 {
+  width: 100rem;
+}
+
+.j-2 {
+  width: 200rem;
+}
+
+.j-3 {
+  width: 300rem;
+}
+
+.j-4 {
+  width: 400rem;
+}
+
+.j-5 {
+  width: 500rem;
+}/*# sourceMappingURL=mixin.css.map */

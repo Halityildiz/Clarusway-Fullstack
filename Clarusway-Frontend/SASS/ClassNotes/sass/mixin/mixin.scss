@@ -1,0 +1,61 @@
+@mixin stil($takim) {
+    @if ($takim == "fb") {
+        background-color: blue;
+        color: yellow;
+    }
+    @else if ($takim == "gs") {
+        background-color: red;
+        color: yellow;
+    }
+    @else if ($takim == "bjk") {
+        background-color: black;
+        color: yellow;
+    }
+    @else {
+        background-color: purple;
+    }
+    
+}
+
+
+
+
+
+.kutu{
+    float: left;
+    padding: 10px 15px;
+    @include stil("fb")
+}
+
+$boyutlar: 1,2,3,4,5;
+
+@each $boyut in $boyutlar{
+
+    .b-#{$boyut} {
+        width: $boyut + px;
+    }
+    
+}
+//for döngüsü
+
+@for $i from 1 through 5 {
+
+    .harvey#{$i}{
+        width: $i*100 +px;
+    }
+    
+}
+
+//while döngüsü
+
+$sayi:1;
+
+@while ($sayi <= 5) {
+
+    .j-#{$sayi}{
+        width: $sayi*100 +rem;
+    }
+
+    $sayi : $sayi +1 ;
+    
+}
