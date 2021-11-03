@@ -3,6 +3,13 @@
   padding: 0px;
 }
 
+.kutu, #third, #a, #b, #c {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 15px;
+}
+
 #first {
   float: left;
   width: 100px;
@@ -21,9 +28,5 @@
 
 #third {
   float: left;
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  margin: 15px;
 }
 /*# sourceMappingURL=mixin.css.map */

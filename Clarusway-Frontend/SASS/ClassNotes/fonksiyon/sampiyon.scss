@@ -1,0 +1,59 @@
+@mixin stil($takim) {
+  @if ($takim == 'fb') {
+    background-color: blue;
+    color: yellow;  
+  }
+  @else if ($takim == 'gs'){
+    background-color: red;
+    color: yellow;
+  }
+  @else if ($takim == 'bjk'){
+    background-color: black;
+    color: white;
+  }
+  @else {
+    background-color: purple;
+  }
+};
+
+.kutu{
+  float: left;
+  padding: 10px 15px;
+  @include stil('gs')
+}
+
+// $boyutlar: 1,2,3,4,5,6;
+// @each $boyut in $boyutlar {
+
+//   .b-#{$boyut} {
+//     font-size: 10 + $boyut + px;
+//   }
+// }
+
+$boyutlar:(
+  1 : 100,
+  2 : 200,
+  3 : 300,
+  4 : 400
+);
+@each $isim, $boyut in $boyutlar {
+
+  .b-#{$isim}{
+    width:$boyut + px
+  }
+}
+
+@for $i from 1 through 5 {  // to 5i haric through 5i dahil ediyor
+  .harvey#{$i}{
+    width: $i*100 + px;
+  }
+}
+
+$sayi :1;
+@while ($sayi <= 5){
+  
+  .j-#{$sayi}{
+    width: $sayi * 100 + rem;
+  }
+  $sayi : $sayi + 1;
+}

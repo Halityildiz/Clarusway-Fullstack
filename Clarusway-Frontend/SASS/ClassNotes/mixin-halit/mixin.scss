@@ -9,12 +9,29 @@
   background-color: $color;
   margin: 15px;
 }
+.kutu{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 15px;
+};
+
 #first{
   @include box (purple)
-}
+};
 #second{
   @include box(red);
-}
+};
 #third{
-  @include box (green)
-}
+  float: left;
+  @extend .kutu;
+};
+#a{
+  @extend .kutu;
+};
+#b{
+  @extend .kutu;
+};
+#c{
+  @extend .kutu;
+};
