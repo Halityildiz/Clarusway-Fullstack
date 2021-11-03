@@ -1,0 +1,20 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+@mixin box ($color) {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: $color;
+  margin: 15px;
+}
+#first{
+  @include box (purple)
+}
+#second{
+  @include box(red);
+}
+#third{
+  @include box (green)
+}
