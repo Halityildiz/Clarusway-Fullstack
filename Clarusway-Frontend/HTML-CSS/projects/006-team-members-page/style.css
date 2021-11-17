@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.switch-on {
+  background-color: black;
+  color: white;
+}
+
+.switch-off {
+  background-color: white;
+  color: black;
+}
+
+.person > div:nth-child(3n + 2) {
+  margin-top: 5rem;
+}
+
+.img-container {
+  justify-content: flex-end;
+}
+.img-container p {
+  text-transform: uppercase;
+  transform-origin: top right;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+  align-self: start;
+  position: absolute;
+  margin: 0px 0px 0px 0px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.img-container img {
+  box-shadow: 1px -1px 10px 6px gray;
+  -webkit-box-shadow: 1px -1px 10px 6px gray;
+  -moz-box-shadow: 1px -1px 10px 6px gray;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.title-grid {
+  margin-bottom: 1.2rem;
+}
