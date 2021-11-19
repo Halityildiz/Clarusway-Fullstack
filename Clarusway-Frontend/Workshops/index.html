@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-size: 4rem;
+      }
+      h1 {
+        font-size: 8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+      var x = 5;
+
+      var y = 6;
+
+      var res = eval("x*y");
+
+      document.write(res);
+    </script>
+
+    <script type="text/javascript">
+      var a = "blogsforblog";
+      var x = a.lastIndexOf("b");
+      document.write(x);
+    </script>
+
+    <script type="text/javascript">
+      a = 8 + "8";
+
+      document.write(a);
+    </script>
+
+    <script type="text/javascript" language="javascript">
+      var a = "blogsforRead";
+      var result = a.substring(4, 5);
+      document.write(result);
+    </script>
+
+    <h1>Demo: confirm()</h1>
+    <p id="msg"></p>
+    <script>
+      var userPreference;
+
+      if (confirm("Do you want to save changes?") == true) {
+        userPreference = "Data saved successfully!";
+      } else {
+        userPreference = "Save Canceled!";
+      }
+
+      document.getElementById("msg").innerHTML = userPreference;
+    </script>
+
+    <!-- <h1>Demo: prompt()</h1>
+	<p id="msg"></p>
+	
+	<script>
+		var tenure = prompt("Please enter preferred tenure in years", "15");
+    
+		document.getElementById("msg").innerHTML = "You have entered " + tenure + " years";
+    </script> -->
+
+    <!-- <h1>Demo: alert()</h1>
+
+    <script>
+      alert("This is an alert message box."); // display string message
+
+      alert("This is a numer: " + 100); // display result of a concatenation
+
+      alert(100); // display number
+
+      alert(Date()); // display current date
+    </script> -->
+
+    <script src="teamwork7.js"></script>
+  </body>
+</html>
