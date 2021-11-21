@@ -1,8 +1,8 @@
-const testimonialsContainer = document.querySelector(".testimonials-container");
+const testimonialsContainer = document.querySelector(".container");
 const testimonial = document.querySelector(".testimonial");
-const userImage = document.querySelector(".user-image");
+const userImage = document.querySelector(".image");
 const username = document.querySelector(".username");
-const role = document.querySelector(".role");
+const film = document.querySelector(".film");
 
 const testimonials = [
   {
@@ -10,7 +10,7 @@ const testimonials = [
     position: "Chamber of Secrets",
     photo:
       "https://i.pinimg.com/564x/ce/e9/8e/cee98e90fe0be765a7631fc73c6640ac.jpg",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium recusandae explicabo illum ipsum iure quis consequatur labore quibusdam obcaecati nobis. Accusamus iusto rerum corrupti. Quia ullam ratione quaerat deleniti expedita excepturi, exercitationem voluptatum vero? Accusamus commodi magni ratione consectetur harum reprehenderit nostrum corporis nihil error officiis, repellat ullam excepturi, minima quisquam laboriosam voluptas neque? Voluptatum, adipisci atque a inventore minus possimus fuga facere accusantium corporis eaque libero, voluptatem sequi illum?",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium recusandae explicabo illum ipsum iure quis consequatur labore quibusdam obcaecati nobis. Accusamus iusto rerum corrupti. Quia ullam ratione  voluptatum vero? Accusamus commodi magni ratione consectetur repellat ullam excepturi, minima quisquam laboriosam voluptas neque? Voluptatum, adipisci atque a inventore minus possimus fuga facere accusantium corporis eaque libero, voluptatem sequi illum?",
   },
   {
     name: "Johnny Deep",
@@ -23,7 +23,7 @@ const testimonials = [
     name: "Bradd Pitt",
     position: "Truva Horse",
     photo:
-      "https://i.pinimg.com/564x/3f/db/6a/3fdb6aef67f79d8b87c9ca6a969cdc96.jpg",
+      "https://i.pinimg.com/564x/f8/13/8e/f8138e956045e1b5aea49c3015e0ecb7.jpg",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet, quibusdam praesentium, inventore similique esse, non sequi beatae magnam quasi deleniti minus autem! Error excepturi velit nobis. Eum quod ipsa, repudiandae quo debitis placeat rerum molestias officiis explicabo veniam, iste officia eos. Rerum explicabo aut animi magnam possimus quis aliquid perspiciatis expedita veniam voluptatum, nisi doloribus asperiores eius. Esse quisquam ea minima maiores aut, ipsam cupiditate?.",
   },
   {
@@ -64,7 +64,7 @@ function updateTestimonial() {
   testimonial.innerHTML = text;
   userImage.src = photo;
   username.innerHTML = name;
-  role.innerHTML = position;
+  film.innerHTML = position;
 
   idx++;
 
@@ -73,4 +73,4 @@ function updateTestimonial() {
   }
 }
 
-setInterval(updateTestimonial, 10000);
+setInterval(updateTestimonial, 4000);

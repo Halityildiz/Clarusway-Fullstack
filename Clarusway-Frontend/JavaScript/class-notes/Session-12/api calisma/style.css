@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #e9d7d7;
+  background-color: #f7f2f2;
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
@@ -19,33 +19,21 @@ body {
   padding: 10px;
 }
 
-.testimonial-container {
+.container {
   background-color: #9197a8;
   color: #fff;
   border-radius: 15px;
   margin: 20px auto;
-  padding: 50px 80px;
+  padding: 50px;
   max-width: 768px;
   position: relative;
+  box-shadow: rgb(0, 0, 0) 10px 8px 1rem;
 }
-
-.fa-quote {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 28px;
-  position: absolute;
-  top: 70px;
-}
-
-.fa-quote-right {
-  left: 40px;
-}
-.fa-quote-left {
-  right: 40px;
-}
-
 .testimonial {
-  line-height: 28px;
+  line-height: 2rem;
   text-align: justify;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
 }
 
 .user {
@@ -54,36 +42,39 @@ body {
   justify-content: center;
 }
 
-.user .user-image {
+.image {
   border-radius: 50%;
   height: 200px;
   width: 200px;
   object-fit: cover;
 }
 
-.user .user-details {
+.details {
   margin-left: 10px;
 }
 
-.user .username {
+.username {
   margin: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
-.user .role {
+.film {
   font-weight: normal;
   margin: 10px 0;
 }
 
 .progress-bar {
-  background-color: #fff;
-  height: 4px;
+  background-color: rgb(255, 255, 255);
+  height: 8px;
   width: 100%;
-  animation: grow 10s linear infinite;
+  animation: grow 4s linear infinite;
   transform-origin: left;
+  margin-bottom: 2rem;
 }
 
 @keyframes grow {
-  50% {
+  0% {
     transform: scaleX(0);
   }
 }
@@ -91,9 +82,5 @@ body {
 @media (max-width: 768px) {
   .testimonial-container {
     padding: 20px 30px;
-  }
-
-  .fa-quote {
-    display: none;
   }
 }
