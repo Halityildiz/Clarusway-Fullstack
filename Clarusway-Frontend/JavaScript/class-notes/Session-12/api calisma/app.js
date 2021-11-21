@@ -6,48 +6,53 @@ const role = document.querySelector(".role");
 
 const testimonials = [
   {
-    name: "Miyah Myles",
-    position: "Marketing",
+    name: "Harry Potter",
+    position: "Chamber of Secrets",
     photo:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=707b9c33066bf8808c934c8ab394dff6",
-    text: "I've worked with literally hundreds of HTML/CSS developers and I have to say the top spot goes to this guy. This guy is an amazing developer. He stresses on good, clean code and pays heed to the details. I love developers who respect each and every aspect of a throughly thought out design and do their best to put it in code. He goes over and beyond and transforms ART into PIXELS - without a glitch, every time.",
+      "https://i.pinimg.com/564x/ce/e9/8e/cee98e90fe0be765a7631fc73c6640ac.jpg",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium recusandae explicabo illum ipsum iure quis consequatur labore quibusdam obcaecati nobis. Accusamus iusto rerum corrupti. Quia ullam ratione quaerat deleniti expedita excepturi, exercitationem voluptatum vero? Accusamus commodi magni ratione consectetur harum reprehenderit nostrum corporis nihil error officiis, repellat ullam excepturi, minima quisquam laboriosam voluptas neque? Voluptatum, adipisci atque a inventore minus possimus fuga facere accusantium corporis eaque libero, voluptatem sequi illum?",
   },
   {
-    name: "June Cha",
-    position: "Software Engineer",
-    photo: "https://randomuser.me/api/portraits/women/44.jpg",
-    text: "This guy is an amazing frontend developer that delivered the task exactly how we need it, do your self a favor and hire him, you will not be disappointed by the work delivered. He will go the extra mile to make sure that you are happy with your project. I will surely work again with him!",
+    name: "Johnny Deep",
+    position: "Carabbian Pirates",
+    photo:
+      "https://i.pinimg.com/564x/22/81/cc/2281ccd7432f7742554ace36c54446c3.jpg",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem temporibus, delectus dolore sequi officia ex officiis deserunt architecto deleniti optio tenetur exercitationem enim, laborum praesentium nemo aperiam cum nobis doloremque ullam! Iure quia voluptatibus sint voluptatum necessitatibus neque eius cumque, earum quibusdam odit, officiis dolore nostrum repellat reprehenderit laborum vitae dicta amet doloribus sed?",
   },
   {
-    name: "Iida Niskanen",
-    position: "Data Entry",
-    photo: "https://randomuser.me/api/portraits/women/68.jpg",
-    text: "This guy is a hard worker. Communication was also very good with him and he was very responsive all the time, something not easy to find in many freelancers. We'll definitely repeat with him.",
+    name: "Bradd Pitt",
+    position: "Truva Horse",
+    photo:
+      "https://i.pinimg.com/564x/3f/db/6a/3fdb6aef67f79d8b87c9ca6a969cdc96.jpg",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam amet, quibusdam praesentium, inventore similique esse, non sequi beatae magnam quasi deleniti minus autem! Error excepturi velit nobis. Eum quod ipsa, repudiandae quo debitis placeat rerum molestias officiis explicabo veniam, iste officia eos. Rerum explicabo aut animi magnam possimus quis aliquid perspiciatis expedita veniam voluptatum, nisi doloribus asperiores eius. Esse quisquam ea minima maiores aut, ipsam cupiditate?.",
   },
   {
-    name: "Renee Sims",
-    position: "Receptionist",
-    photo: "https://randomuser.me/api/portraits/women/65.jpg",
-    text: "This guy does everything he can to get the job done and done right. This is the second time I've hired him, and I'll hire him again in the future.",
+    name: "Tom Cruise",
+    position: "Mission Impossible",
+    photo:
+      "https://i.pinimg.com/564x/64/91/59/6491595eee4ea4b86ca1bc1773afeb90.jpg",
+    text: "  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sapiente ipsam quis esse impedit hic nobis natus ipsa explicabo molestiae, vitae eveniet aut, quam quaerat vel ipsum culpa similique debitis atque cum doloribus nihil iure iste. Nam laborum doloremque in esse!",
   },
   {
-    name: "Jonathan Nunfiez",
-    position: "Graphic Designer",
-    photo: "https://randomuser.me/api/portraits/men/43.jpg",
-    text: "I had my concerns that due to a tight deadline this project can't be done. But this guy proved me wrong not only he delivered an outstanding work but he managed to deliver 1 day prior to the deadline. And when I asked for some revisions he made them in MINUTES. I'm looking forward to work with him again and I totally recommend him. Thanks again!",
+    name: "Keanu Reeves",
+    position: "Matrix Reloaded",
+    photo:
+      "https://i.pinimg.com/564x/eb/01/73/eb01737ac0026e9f96773483b684c928.jpg",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cupiditate commodi temporibus totam, ut debitis quidem sequi, soluta modi quibusdam voluptates ea veniam rerum quasi officiis itaque expedita placeat suscipit molestias hic facilis assumenda aliquid? Totam laborum voluptatem sint explicabo eos doloribus velit error eveniet",
   },
   {
-    name: "Sasha Ho",
+    name: "Justin Maas",
     position: "Accountant",
     photo:
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb",
-    text: "This guy is a top notch designer and front end developer. He communicates well, works fast and produces quality work. We have been lucky to work with him!",
+      "https://i.pinimg.com/564x/e2/20/17/e220173f71024fc013a31340b426b4de.jpg",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta magni ea excepturi? Similique, libero vel commodi dolores dolore, ipsa rem maiores officiis distinctio reiciendis minima, molestiae debitis eveniet voluptates ducimus. Magnam, in dolorem non facere fugit corrupti. Fuga laborum cupiditate recusandae quo reiciendis sit blanditiis iure, ab accusamus explicabo fugit ipsum error.",
   },
   {
-    name: "Veeti Seppanen",
+    name: "Leanrdo Di Caprio",
     position: "Director",
-    photo: "https://randomuser.me/api/portraits/men/97.jpg",
-    text: "This guy is a young and talented IT professional, proactive and responsible, with a strong work ethic. He is very strong in PSD2HTML conversions and HTML/CSS technology. He is a quick learner, eager to learn new technologies. He is focused and has the good dynamics to achieve due dates and outstanding results.",
+    photo:
+      "https://i.pinimg.com/564x/c9/7a/8a/c97a8a7481e1d3f41d1a9b24a511b3c0.jpg",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quo sequi quos quod blanditiis alias corporis dolorem quaerat doloribus amet reprehenderit recusandae perspiciatis est expedita, autem, ut fugit tempora nulla quasi quis itaque voluptatem velit. Pariatur fugit libero, sit, expedita, neque nulla consectetur temporibus at odit aut dolore.",
   },
 ];
 
@@ -68,4 +73,4 @@ function updateTestimonial() {
   }
 }
 
-setInterval(updateTestimonial, 10000);
+setInterval(updateTestimonial, 2000);
