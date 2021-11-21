@@ -31,7 +31,7 @@ const testimonials = [
     position: "Mission Impossible",
     photo:
       "https://i.pinimg.com/564x/64/91/59/6491595eee4ea4b86ca1bc1773afeb90.jpg",
-    text: "  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sapiente ipsam quis esse impedit hic nobis natus ipsa explicabo molestiae, vitae eveniet aut, quam quaerat vel ipsum culpa similique debitis atque cum doloribus nihil iure iste. Nam laborum doloremque in esse!",
+    text: "  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sapiente ipsam quis esse impedit hic nobis natus ipsa explicabo molestiae, vitae eveniet aut, quam quaerat vel ipsum culpa similiquemolestiae, vitae eveniet aut, quam quaerat vel ipsum culpa similique debitis atque cum doloribus nihil iure iste. Nam laborum doloremque in esse!",
   },
   {
     name: "Keanu Reeves",
@@ -41,15 +41,15 @@ const testimonials = [
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cupiditate commodi temporibus totam, ut debitis quidem sequi, soluta modi quibusdam voluptates ea veniam rerum quasi officiis itaque expedita placeat suscipit molestias hic facilis assumenda aliquid? Totam laborum voluptatem sint explicabo eos doloribus velit error eveniet",
   },
   {
-    name: "Justin Maas",
-    position: "Accountant",
+    name: "Hugh Jackman",
+    position: "The Wolverine",
     photo:
       "https://i.pinimg.com/564x/e2/20/17/e220173f71024fc013a31340b426b4de.jpg",
     text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta magni ea excepturi? Similique, libero vel commodi dolores dolore, ipsa rem maiores officiis distinctio reiciendis minima, molestiae debitis eveniet voluptates ducimus. Magnam, in dolorem non facere fugit corrupti. Fuga laborum cupiditate recusandae quo reiciendis sit blanditiis iure, ab accusamus explicabo fugit ipsum error.",
   },
   {
-    name: "Leanrdo Di Caprio",
-    position: "Director",
+    name: "Leanardo Di Caprio",
+    position: "Titanic",
     photo:
       "https://i.pinimg.com/564x/c9/7a/8a/c97a8a7481e1d3f41d1a9b24a511b3c0.jpg",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quo sequi quos quod blanditiis alias corporis dolorem quaerat doloribus amet reprehenderit recusandae perspiciatis est expedita, autem, ut fugit tempora nulla quasi quis itaque voluptatem velit. Pariatur fugit libero, sit, expedita, neque nulla consectetur temporibus at odit aut dolore.",
@@ -73,4 +73,4 @@ function updateTestimonial() {
   }
 }
 
-setInterval(updateTestimonial, 2000);
+setInterval(updateTestimonial, 10000);
