@@ -9,6 +9,7 @@
   https://restcountries.com/v3.1/name/${country}`
   );
   request.send();
+
   request.addEventListener('load', function () {
     console.log(JSON.parse(this.responseText));
     const [data] = JSON.parse(this.responseText);
@@ -21,7 +22,7 @@
 // getCountryDataXHR('turkey');
 // getCountryDataXHR('france');
 
-const renderCountry = (data, className = "") => {
+const renderCountry = (data, className = '') => {
   const {
     name: { common: countryName },
     region,
@@ -31,7 +32,7 @@ const renderCountry = (data, className = "") => {
     languages,
     currencies,
   } = data; // countryName
-  const countryElm = document.querySelector(".countries");
+  const countryElm = document.querySelector('.countries');
   const htmlContent = `
   <div class="country ${className}">
     <img class="country__img" src="${countryFlag}" />
@@ -53,7 +54,7 @@ const renderCountry = (data, className = "") => {
     </div>
   </div>
   `;
-  countryElm.insertAdjacentHTML("beforeend", htmlContent);
+  countryElm.insertAdjacentHTML('beforeend', htmlContent);
   countryElm.style.opacity = 1;
 };
 
@@ -77,11 +78,9 @@ const renderCountry = (data, className = "") => {
 // showCountryProm('south africa');
 // showCountryProm('belgium');
 
-const getCountryDataByName = async (countryName) => {
+const getCountryDataByName = async countryName => {
   try {
-    const response = await fetch(
-      `https://restcountries.com/v3.1/name/${countryName}`
-    );
+    const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
     if (!response.ok) throw new Error(`something is wrong! ${response.status}`);
     const data = await response.json();
     // const [countryData] = data;
@@ -96,7 +95,7 @@ const getCountryDataByName = async (countryName) => {
   }
 };
 
-const showCountry = async (countryName) => {
+const showCountry = async countryName => {
   try {
     const countryData = await getCountryDataByName(countryName);
     renderCountry(countryData);
@@ -112,11 +111,9 @@ const showCountry = async (countryName) => {
 // showCountry('UK');
 // showCountry('Turkey');
 
-const getCountryDataByCode = async (countryCode) => {
+const getCountryDataByCode = async countryCode => {
   try {
-    const response = await fetch(
-      `https://restcountries.com/v3.1/alpha/${countryCode}`
-    );
+    const response = await fetch(`https://restcountries.com/v3.1/alpha/${countryCode}`);
     if (!response.ok) throw new Error(`something is wrong! ${response.status}`);
     const data = await response.json();
     // const [countryData] = data;
@@ -131,15 +128,15 @@ const getCountryDataByCode = async (countryCode) => {
   }
 };
 
-const showCountryWithNeighbours = async (countryName) => {
+const showCountryWithNeighbours = async countryName => {
   try {
     const countryData = await getCountryDataByName(countryName);
     renderCountry(countryData);
     const neighbours = countryData.borders;
-    if (!neighbours) throw new Error("No neighbours 🤷‍♀️");
-    neighbours.forEach(async (neighbour) => {
+    if (!neighbours) throw new Error('No neighbours 🤷‍♀️');
+    neighbours.forEach(async neighbour => {
       const country = await getCountryDataByCode(neighbour);
-      renderCountry(country, "neighbour");
+      renderCountry(country, 'neighbour');
     });
     /*     const neighbour = neighbours[0];
     const neighbourData = await getCountryDataByCode(neighbour);
@@ -150,11 +147,11 @@ const showCountryWithNeighbours = async (countryName) => {
   }
 };
 
-const renderError = (msg) => {
-  const countryElm = document.querySelector(".countries");
-  countryElm.insertAdjacentText("beforeend", msg);
+const renderError = msg => {
+  const countryElm = document.querySelector('.countries');
+  countryElm.insertAdjacentText('beforeend', msg);
   countryElm.style.opacity = 1;
 };
 
-showCountryWithNeighbours("australia");
+showCountryWithNeighbours('australia');
 // showCountryWithNeighbours('russia');
