@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Halit Yildiz",
+    "department": "Bilisim",
+    "salary": 3500
+  },
+  {
+    "name": "Fatman Tan",
+    "department": "Pazarlama",
+    "salary": 5000
+  },
+  {
+    "name": "Emir Altan",
+    "department": "Muhasebe",
+    "salary": 4000
+  },
+  {
+    "name": "Hasan Huseyin",
+    "department": "Isci",
+    "salary": 2000
+  },
+  {
+    "name": "Haldun Karagoz ",
+    "department": "Ciftci",
+    "salary": 2500
+  }
+]

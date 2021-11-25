@@ -28,6 +28,37 @@ document.getElementById("btn").addEventListener("click", function () {
   // console.log(xhr);
 });
 
+document.getElementById("btn").addEventListener("click", function () {
+  // XMLHttpRequest
+  const xhr = new XMLHttpRequest();
+  xhr.onload = function () {
+    if (this.status === 200) {
+      // console.log(this.responseText);
+      document.getElementById("ajax").textContent = this.responseText;
+    }
+  };
+
+  xhr.open("GET", "example.txt", true); //true asenkron
+  xhr.send();
+  // console.log(xhr);
+});
+
+document.getElementById("btn").addEventListener("click", function () {
+  // XMLHttpRequest
+  const xhr = new XMLHttpRequest();
+  // xhr.onreadystatechange = function () {
+  //   if ((this.status == 200) & (this.readyState == 4)) {
+  //     console.log(this.responseText);
+  //   }
+  xhr.onprogress = function () {
+    console.log("Process isleniyor...", this.readyState);
+  };
+
+  xhr.open("GET", "example.txt", true); //true asenkron
+  xhr.send();
+  // console.log(xhr);
+});
+
 // XMLHttpRequest
 // onabort: null
 // onerror: null

@@ -57,10 +57,10 @@ function addTwo(number) {
     }, 3000);
   });
 }
-addTwo(10)
+addTwo(23)
   .then((response) => {
     console.log(response);
     return response * 2;
   })
   .then((response2) => console.log(response2))
-  .catch((err) => console.log(err)); // bir tane catch birden cok then yakalayabiliriz
+  .catch((err) => console.error(err)); // bir tane catch birden cok then yakalayabiliriz
