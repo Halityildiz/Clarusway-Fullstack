@@ -33,8 +33,8 @@ class Request {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    const data = await response.json();
-    return data;
+    const resdata = await response.json();
+    return resdata;
   }
 
   // put request guncelleme yapmak icin
@@ -58,8 +58,8 @@ class Request {
         "Content-type": "application/json; charset=UTF-8",
       },
     });
-    const data = await response.json();
-    return data;
+    const resdata = await response.json();
+    return resdata;
   }
 
   // delete request silmek icin
@@ -97,9 +97,7 @@ class Request {
 // console.log(albums); // icerideki veriyi  undefined aliyoruz bunu burada degil icerde almaliyiz  asenkron
 
 //post request
-
 // const request = new Request();
-
 // request
 //   .post("https://jsonplaceholder.typicode.com/albums", {
 //     userId: 1,
@@ -111,7 +109,6 @@ class Request {
 //put request
 
 // const request = new Request();
-
 // request
 //   .put("https://jsonplaceholder.typicode.com/albums/1", {
 //     userId: 10,
@@ -122,9 +119,8 @@ class Request {
 
 //delete request
 
-const request = new Request();
-
-request
-  .delete("https://jsonplaceholder.typicode.com/albums/1")
-  .then((message) => console.log(message))
-  .catch((err) => console.log(err));
+// const request = new Request();
+// request
+//   .delete("https://jsonplaceholder.typicode.com/albums/1")
+//   .then((message) => console.log(message))
+//   .catch((err) => console.log(err));
