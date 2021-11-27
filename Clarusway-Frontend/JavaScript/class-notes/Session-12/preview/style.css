@@ -31,8 +31,7 @@ body {
   font-family: system-ui;
   color: #555;
   background-image: url("https://i.pinimg.com/564x/bd/3a/38/bd3a3869d45996f266efe05cc95d0118.jpg");
-  background-repeat: repeat;
-  background-size: cover;
+
   background-position: center;
   /* background-color: #f7f7f7; */
   min-height: 96vh;
@@ -164,8 +163,9 @@ body {
 .input {
   font-size: 2rem;
   line-height: 3rem;
-  padding: 0.5rem 10px 0.5rem;
+  padding: 0.5rem 40px 0.5rem;
   border-bottom: 1px solid;
+  border-radius: 1rem;
 }
 
 .input::placeholder {
@@ -179,7 +179,7 @@ button {
   padding: 8px 20px;
   margin-left: 15px;
   border-radius: 8px;
-  background: rgb(158, 65, 167);
+  background-color: #a29073;
   transition: background 0.3s ease-in-out;
 }
 
@@ -188,11 +188,18 @@ button:hover {
 }
 .msg {
   font-family: "Roboto Mono", monospace;
-  color: rgb(192, 22, 22);
+  color: #fff;
   font-size: 20px;
   padding: 1rem;
   display: flex;
   font-weight: bolder;
-  align-items: center;
+  text-align: center;
   justify-content: center;
+  background-color: #a29073;
+  /* color: rgb(0, 0, 0); */
+  letter-spacing: 3px;
+  opacity: 1;
+  width: 60%;
+  margin: 1rem auto;
+  border-radius: 1rem;
 }
