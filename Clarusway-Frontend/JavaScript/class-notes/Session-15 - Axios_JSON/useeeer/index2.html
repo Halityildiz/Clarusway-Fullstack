@@ -41,24 +41,53 @@
         width: 100%;
         z-index: 9999999;
       }
+      #tbodyUserList {
+        /* background-color: transparent; */
+        font-size: 1.3rem;
+        color: black;
+      }
+      .table {
+        border: 5px solid #0d6efd;
+        box-shadow: 7px 6px 5px #696e75;
+      }
+      img {
+        border-radius: 50%;
+        box-shadow: 5px 5px 5px #0d6efd;
+      }
+      .heading {
+        letter-spacing: 2px;
+        background-color: #0d6efd;
+      }
+      body {
+        background-image: url("https://images.unsplash.com/photo-1633113089631-6456cccaadad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     </style>
   </head>
 
   <body>
     <div
-      class="bg-dark text-light text-center p-2 fixed-top"
-      style="margin-bottom: 0px"
+      class="bg-primary text-light text-center p-3 m-1"
+      style="
+        margin-bottom: 0px;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        box-shadow: 5px 5px 5px #696e75;
+      "
     >
       USER LIST
     </div>
 
-    <div class="container mt-5" id="MainDiv">
+    <div class="container mt-2" id="MainDiv">
       <table
         id="example"
         class="table table-bordered table-striped"
         style="width: 100%"
       >
-        <thead class="bg-dark text-light">
+        <thead class="text-light heading">
           <tr>
             <th class="text-center">Avatar</th>
             <th class="text-center">Id</th>
@@ -82,7 +111,7 @@
       </nav>
       <div id="loading" style="display: none">
         <center>
-          <img src="img/loading.gif" />
+          <img src="loading.gif" />
         </center>
       </div>
     </div>
@@ -98,5 +127,5 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"
   ></script>
-  <script src="./js/userList.js"></script>
+  <script src="./js/user2.js"></script>
 </html>
