@@ -42,26 +42,28 @@
         z-index: 9999999;
       }
       #tbodyUserList {
-        /* background-color: transparent; */
         font-size: 1.3rem;
-        color: black;
+        color: white;
+        vertical-align: middle;
       }
       .table {
         border: 5px solid #0d6efd;
-        box-shadow: 7px 6px 5px #696e75;
+        box-shadow: 10px 10px 10px #696e75;
+        background: rgba(250, 246, 246, 0.4);
       }
       img {
         border-radius: 50%;
-        box-shadow: 5px 5px 5px #0d6efd;
+        box-shadow: 10px 10px 10px #0d6efd;
+        width: 150px;
       }
       .heading {
         letter-spacing: 2px;
         background-color: #0d6efd;
       }
       body {
-        background-image: url("https://images.unsplash.com/photo-1633113089631-6456cccaadad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        background-image: url("https://images.unsplash.com/photo-1633113212875-8ecf30ad2e81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-size: cover;
       }
     </style>
@@ -82,11 +84,7 @@
     </div>
 
     <div class="container mt-2" id="MainDiv">
-      <table
-        id="example"
-        class="table table-bordered table-striped"
-        style="width: 100%"
-      >
+      <table id="example" class="table table-bordered" style="width: 100%">
         <thead class="text-light heading">
           <tr>
             <th class="text-center">Avatar</th>
