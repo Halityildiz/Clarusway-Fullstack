@@ -42,6 +42,6 @@ const apiRegister = async () => {
     localStorage.setItem("tokenKey", data.token);
     localStorage.setItem("tokenKeyEncrypted", EncryptStringAES(data.token));
     removeLoading();
-    window.location.href = "index2.html";
+    window.location.href = "index1.html";
   }
 };
