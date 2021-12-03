@@ -7,6 +7,7 @@ class ClassComp extends React.Component {
         {" "}
         <h1>Welcome to ReactJS from Class Component</h1>
         <p>Age: {this.props.old} </p>
+        <p>Car: {this.props.car} </p>
       </div>
     );
   }
