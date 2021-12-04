@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+.navbar {
+  background-color: #171b20;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 24px 26px;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ace0f9;
+  color: black;
+}
