@@ -1,16 +1,17 @@
 import React from "react";
+import { myStyles } from "./styles";
 
-const myStyles = {
-  paragraf: {
-    color: "blue",
-    fontSize: "1.2rem",
-    fontWeight: "bolder",
-  },
-  secondDiv: {
-    backgroundColor: "#b0b0b0",
-    padding: "1rem 10px",
-  },
-};
+// const myStyles = {
+//   paragraf: {
+//     color: "blue",
+//     fontSize: "1.2rem",
+//     fontWeight: "bolder",
+//   },
+//   secondDiv: {
+//     backgroundColor: "#b0b0b0",
+//     padding: "1rem 10px",
+//   },
+// };
 
 const Inline = () => {
   return (
