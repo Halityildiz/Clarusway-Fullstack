@@ -8,6 +8,15 @@ class ClassComponent extends React.Component {
   increase = () => {
     this.setState({ count: this.state.count + 1 })
   }
+  componentDidMount() {
+    console.log('class comp mounted')
+  }
+  componentDidUpdate() {
+    console.log('class comp updated')
+  }
+  componentWillUnmount() {
+    console.log('class comp unmounted')
+  }
   render() {
     return (
       <div className="class">
