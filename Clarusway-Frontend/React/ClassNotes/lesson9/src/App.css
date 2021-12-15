@@ -3,13 +3,18 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+  display: block;
+  width: 150px;
+  border-radius: 40%;
+  background-color: hsl(205, 63%, 48%);
+  padding: 2px;
+  margin: 25px auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
