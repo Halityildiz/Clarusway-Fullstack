@@ -51,9 +51,7 @@ Global Styles
 ===============
 */
 
-*,
-::after,
-::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -61,7 +59,7 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: var(--clr-grey-10);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -89,6 +87,7 @@ h2 {
 }
 h3 {
   font-size: 1.25rem;
+  /* color: hsl(205, 63%, 48%); */
 }
 h4 {
   font-size: 0.875rem;
@@ -99,7 +98,7 @@ p {
 }
 @media screen and (min-width: 800px) {
   h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   h4 {
     font-size: 1rem;
@@ -143,7 +142,7 @@ Pagination
   background: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   text-align: center;
 }
 .card:hover {
@@ -158,12 +157,15 @@ Pagination
   margin-bottom: 0.75rem;
   padding-right: 10px;
   background-color: hsl(205, 63%, 48%);
+  border: 2px solid hsl(205, 63%, 48%);
 }
 
 .card h4 {
   margin-bottom: 1.5rem;
   font-size: 0.85rem;
   color: var(--clr-grey-5);
+  text-transform: lowercase;
+  overflow-wrap: break-word;
 }
 
 .btn {
@@ -179,15 +181,16 @@ Pagination
   cursor: pointer;
 }
 .btn:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  background-color: red;
 }
 
-.btn-container {
+/* .btn-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-.page-btn {
+} */
+/* .page-btn {
   width: 2rem;
   height: 2rem;
   background: var(--clr-primary-7);
@@ -196,8 +199,8 @@ Pagination
   cursor: pointer;
   margin: 0.5rem;
   transition: var(--transition);
-}
-.active-btn {
+} */
+/* .active-btn {
   background: var(--clr-primary-1);
   color: var(--clr-white);
 }
@@ -218,4 +221,4 @@ Pagination
     margin: 0 auto;
     max-width: 700px;
   }
-}
+} */
