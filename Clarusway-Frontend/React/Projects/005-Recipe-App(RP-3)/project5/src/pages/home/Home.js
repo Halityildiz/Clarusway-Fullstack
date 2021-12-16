@@ -43,7 +43,7 @@ const Home = () => {
           ))}
         </MainContainer>
       ) : (
-        <ImgDiv>
+        <ImgDiv style={{ backgroundColor: "#48c5ee" }}>
           <HomeImg src={homeSvg} />
         </ImgDiv>
       )}
