@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
 export const MainHeader = styled.h2`
   margin-top: 1rem;
   letter-spacing: 3px;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 3.5rem;
   color: #fff;
 `;

@@ -17,9 +17,9 @@ export const Hamburger = styled.div`
   flex-direction: column;
   cursor: pointer;
   span {
-    height: 4px;
-    width: 25px;
-    background: #00adb5;
+    height: 6px;
+    width: 35px;
+    background: #fff;
     margin-bottom: 4px;
     border-radius: 5px;
   }
@@ -33,7 +33,7 @@ export const MenuLink = styled(Link)`
   text-align: center;
   text-decoration: none;
   color: #02475e;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-out;
   font-size: 1.7rem;
   font-family: "Nunito", sans-serif;
   &:hover {
@@ -42,11 +42,12 @@ export const MenuLink = styled(Link)`
     font-size: 2.5rem;
   }
   @media (max-width: 877px) {
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    border: 1px solid red;
+    background-image: linear-gradient(to top, #6e88d7 0%, #f9d423 100%);
+    border: 3px solid #fff;
     margin-bottom: 3px;
-    border-radius: 0;
-    width: 100%;
+    border-radius: 50px;
+    width: 90%;
+    height: 80%;
   }
 `;
 export const Menu = styled.div`
@@ -58,12 +59,13 @@ export const Menu = styled.div`
     overflow: hidden;
     flex-direction: column;
     width: 100%;
-    max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+    max-height: ${({ isOpen }) => (isOpen ? "350px" : "0")};
     transition: max-height 0.5s ease-in;
   }
 `;
 export const Logo = styled(Link)`
   color: #393e46;
+
   text-decoration: none;
   font-weight: 800;
   font-size: 2rem;
