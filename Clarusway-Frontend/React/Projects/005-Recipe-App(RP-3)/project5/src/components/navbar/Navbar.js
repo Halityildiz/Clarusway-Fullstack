@@ -1,23 +1,28 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "../components/navbar/Navbar";
-import Home from "../pages/home/Home";
-import About from "../pages/about/About";
-import Details from "../pages/details/Details";
-import Login from "../pages/login/Login";
-const AppRouter = () => {
+import React, { useState } from "react";
+import { Nav, Logo, Hamburger, MenuLink, Menu } from "./NavbarStyle";
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/details" element={<Details />} />
-          <Route path="/login" element={<Login />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Nav>
+      <Logo to="/">
+        <i>{"<Clarusway>"}</i>
+        <span>recipe</span>
+      </Logo>
+      <Hamburger onClick={() => setIsOpen(!isOpen)}>
+        <span />
+        <span />
+        <span />
+      </Hamburger>
+      <Menu isOpen={isOpen}>
+        <MenuLink to="/about">About</MenuLink>
+        <MenuLink
+          to={{ pathname: "https://github.com/orgs/clarusway/dashboard" }}
+        >
+          Github
+        </MenuLink>
+        <MenuLink to="/login">Logout</MenuLink>
+      </Menu>
+    </Nav>
   );
 };
-export default AppRouter;
+export default Navbar;
