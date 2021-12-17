@@ -5,6 +5,7 @@ const btnStyle = {
   padding: "20px",
   fontSize: "30px",
   borderRadius: "20px",
+  marginLeft: "80px",
 };
 const Button = (props) => {
   const { onClick, name, color, bgColor } = props;
