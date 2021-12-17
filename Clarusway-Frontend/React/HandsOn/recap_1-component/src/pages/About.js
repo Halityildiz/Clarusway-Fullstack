@@ -5,13 +5,13 @@ import aboutImg from "../img/about.jpg";
 
 const About = () => {
   const handleClick = () => {
-    alert("about sayfasinin derinliklerine saliyorsun!");
+    alert("About sayfasinin derinliklerine ilerliyoruz!");
   };
   return (
     <div>
       <h1>About</h1>
       <Welcome name="About" img={aboutImg} />
-      <Button name="header" click={handleClick} color="white" />
+      <Button name="About" onClick={handleClick} color="white" bgColor="red" />
     </div>
   );
 };

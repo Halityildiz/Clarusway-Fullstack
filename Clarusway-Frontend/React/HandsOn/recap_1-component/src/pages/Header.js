@@ -12,7 +12,12 @@ const Header = () => {
     <div>
       <h1>Header</h1>
       <Welcome name="Header" img={headerImg} />
-      <Button click={handleClick} color="white" bgColor="black" />
+      <Button
+        name="Header"
+        onClick={handleClick}
+        color="white"
+        bgColor="black"
+      />
     </div>
   );
 };

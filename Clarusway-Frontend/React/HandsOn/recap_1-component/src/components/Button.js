@@ -4,10 +4,10 @@ const btnStyle = {
   // backgroundColor: "red",
   padding: "20px",
   fontSize: "30px",
-  borderRadius: "40%",
+  borderRadius: "20px",
 };
 const Button = (props) => {
-  const { click, name, color, bgColor } = props;
+  const { onClick, name, color, bgColor } = props;
   // const handleClick = () => {
   //   alert("Sayfayi yonlendiriliyorsunuz!");
   // };
@@ -15,7 +15,7 @@ const Button = (props) => {
     <div>
       <button
         style={{ ...btnStyle, color: color, background: bgColor }}
-        onClick={click}
+        onClick={onClick}
       >
         {name}
       </button>
