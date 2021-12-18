@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Card, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
 function Card() {
@@ -22,24 +22,23 @@ function Card() {
   }, [hata]);
   if (!hata) {
     return (
-      <div xs={1} md={2} className="g-4">
-        {ulkeler.from({ length: 4 }).map((ulke) => (
-          <div>
-            <Card key={ulke.name.common}>
-              <Card.Img
-                variant="top"
-                src={ulke.flags[0]}
-                alt={ulke.name.common}
-                width="30%"
-              />
+      <Row xs={1} md={2} className="g-4">
+        {Array.from({ length: 4 }).map((_, idx) => (
+          <Col>
+            <Card>
+              <Card.Img variant="top" src="holder.js/100px160" />
               <Card.Body>
-                <Card.Title>{ulke.name.common}</Card.Title>
-                <Card.Text>Capital:{ulke.capital}</Card.Text>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </Card.Text>
               </Card.Body>
             </Card>
-          </div>
+          </Col>
         ))}
-      </div>
+      </Row>
     );
   } else {
     return (

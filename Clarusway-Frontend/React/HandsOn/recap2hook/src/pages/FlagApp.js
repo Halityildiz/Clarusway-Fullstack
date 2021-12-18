@@ -24,13 +24,17 @@ function FlagApp() {
       <div className="container text-center mt-4">
         <h1 className="text-danger">ULKELER</h1>
         {ulkeler.map((ulke) => {
-          const { name, capital, flags } = ulke;
+          const { name, capital, flags, currencies, languages, population } =
+            ulke;
           return (
             <div key={name.common}>
               <img src={flags[0]} alt={name.common} width="30%" />
               <div>
                 <h2>{name.common}</h2>
                 <h4>Capital:{capital}</h4>
+                {/* <h4>Currencies:{currencies}</h4>
+                <h4>Languages:{languages}</h4>
+                <h4>Population:{population}</h4> */}
               </div>
             </div>
           );
