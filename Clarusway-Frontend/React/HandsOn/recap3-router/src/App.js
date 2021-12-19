@@ -4,8 +4,12 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Footer from "./components/Footer";
-import FullStack from "./pages/Fullstack";
-import Instructors from "./pages/Instructors";
+import Hastalik from "./pages/Hastalik";
+import Cerrahi from "./pages/Cerrahi";
+import Ortopedi from "./pages/Ortopedi";
+import Psikoloji from "./pages/Psikoloji";
+import Scientists from "./pages/Scientists";
+import Education from "./pages/Education";
 
 function App() {
   return (
@@ -15,12 +19,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/developing" element={<FullStack />} />
-        {/* For simplicity these two components didnt coded */}
-        <Route path="/data-science" element={<FullStack />} />
-        <Route path="/devops" element={<FullStack />} />
-        {/* ************************************************* */}
-        <Route path="/instructors" element={<Instructors />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/hastalik" element={<Hastalik />} />
+        <Route path="/ortopedi" element={<Ortopedi />} />
+        <Route path="/psikoloji" element={<Psikoloji />} />
+        <Route path="/cerrahi" element={<Cerrahi />} />
+        <Route path="/scientists" element={<Scientists />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -5,16 +5,16 @@ import MyCard from "./MyCard";
 const Courses = ({ data }) => {
   return (
     <div>
-      <Container style={{ height: "auto" }}>
-        <Row className="mt-3 mb-3 d-flex justify-content-center">
+      <Container className="text-center mt-4 height:500px">
+        <Row className="d-flex justify-content-center">
           {data.map((course) => {
             return (
               <Col
                 className="mb-3 d-flex justify-content-center"
                 key={course.id}
-                xs={12}
+                xs={10}
                 md={6}
-                lg={4}
+                lg={3}
               >
                 <MyCard course={course} />
               </Col>

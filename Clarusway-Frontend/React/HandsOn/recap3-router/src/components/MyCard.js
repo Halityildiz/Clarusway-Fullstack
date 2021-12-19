@@ -7,7 +7,7 @@ const MyCard = (props) => {
   const { img, link, text, name } = props.course;
   return (
     <div>
-      <Card style={{ width: "18rem", height: "" }}>
+      <Card style={{ width: "18rem", height: "580px" }}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
