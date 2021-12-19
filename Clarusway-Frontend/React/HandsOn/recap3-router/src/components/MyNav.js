@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import logo from "../img/logo.png";
+import logo from "../img/logom.png";
 
 const MyNav = () => {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ const MyNav = () => {
         text="light"
         expand="lg"
         style={{
-          backgroundImage: "linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)",
+          background: "#a1c4fd",
         }}
         onSelect={(eventKey) =>
           eventKey === "home" ? navigate("/") : navigate(`/${eventKey}`)
@@ -21,7 +21,11 @@ const MyNav = () => {
         <Container>
           <Navbar.Brand>
             <Nav.Link eventKey="home">
-              <img src={logo} alt="" />
+              <img
+                style={{ width: "300px", borderRadius: "30px" }}
+                src={logo}
+                alt=""
+              />
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -69,7 +73,7 @@ const MyNav = () => {
                   Çocuk Psikolojisi ve Psikolojik Danışmanlık
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link eventKey="about">About Us</Nav.Link>
+              <Nav.Link eventKey="about">AboutUs</Nav.Link>
               <Nav.Link eventKey="Scientists">Scientists</Nav.Link>
               <Nav.Link eventKey="education">Education</Nav.Link>
               <Nav.Link eventKey="contact">Contact</Nav.Link>

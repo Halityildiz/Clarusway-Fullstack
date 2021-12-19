@@ -8,7 +8,15 @@ const Cerrahi = () => {
       <Container>
         <Row>
           <Col md={12} lg={6}>
-            <img src={cerrahi} alt="" className="w-100 mt-3" />
+            <img
+              src={cerrahi}
+              alt=""
+              className="w-100 mt-3"
+              style={{
+                borderRadius: "30px",
+                border: "5px solid #a2c6fd",
+              }}
+            />
           </Col>
           <Col className="mt-2">
             <h1>Çocuk Cerrahisi Servisi</h1>
