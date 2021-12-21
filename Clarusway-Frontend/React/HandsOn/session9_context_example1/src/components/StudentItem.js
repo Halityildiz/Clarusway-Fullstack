@@ -14,10 +14,10 @@ const StudentItem = ({ student }) => {
         marginBottom: "1rem",
       }}
     >
-      <h3>{name}</h3>
-      <h4>{email}</h4>
-      <h4> {age}</h4>
-      Color:{" "}
+      <h3>NAME: {name}</h3>
+      <h4>EMAIL: {email}</h4>
+      <h4>AGE: {age}</h4>
+      Color:
       <input
         type="text"
         value={color}
