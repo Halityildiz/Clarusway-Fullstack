@@ -8,11 +8,24 @@ const User = ({ user }) => {
   const { changeImageWidth } = useUserContext();
 
   return (
-    <div>
-      <h3>{login}</h3>
-      <img src={avatar_url} alt="" width={width} />
-      <div>
-        <label htmlFor="width">Image width(px)</label>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        marginBottom: "20px",
+        borderBottom: "8px solid blue",
+      }}
+    >
+      <h1 style={{ textTransform: "uppercase" }}>{login}</h1>
+      <img
+        src={avatar_url}
+        alt=""
+        width={width}
+        style={{ borderRadius: "50% ", border: "5px solid red" }}
+      />
+      <div style={{ fontSize: "24px", margin: "20px" }}>
+        <label htmlFor="width">Image Diameter(px)</label>
         <input
           className="width"
           type="number"
