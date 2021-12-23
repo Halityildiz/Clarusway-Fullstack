@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { auth } from "";
 
 const Register = () => {
   const [firstName, setFirstName] = useState();
