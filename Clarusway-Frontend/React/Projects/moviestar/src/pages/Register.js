@@ -8,8 +8,8 @@ const Register = () => {
 
   const handleSubmit = async () => {
     try {
-    } catch (err) {
-      alert(err.message);
+    } catch (error) {
+      alert("error.message");
     }
   };
 
