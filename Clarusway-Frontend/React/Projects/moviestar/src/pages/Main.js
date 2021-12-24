@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+
 import MovieCards from "../components/MovieCards";
+import { AuthContext } from "../context/AuthContext";
 
 const FEATURED_API =
   "https://api.themoviedb.org/3/discover/movie?api_key=d6278b3dc3e6f8f8376a89851c3f8c8f";
@@ -9,14 +10,18 @@ const SEARCH_API =
 
 const Main = () => {
   const [movies, setMovies] = useState([]);
-  const [searchTerm, setSearchTerm] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const { currentUser } = useContext(AuthContext);
+
   useEffect(() => {
     getMovies(FEATURED_API);
   }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (searchTerm) {
+    if (searchTerm && currentUser) {
       getMovies(SEARCH_API + searchTerm);
+    } else {
+      alert("Please login to search anew movie.");
     }
     setSearchTerm("");
   };
@@ -31,12 +36,18 @@ const Main = () => {
       <form className="search" onSubmit={handleSubmit}>
         <input
           type="search"
-          className="search-input"
+          className="search-input p-4"
           placeholder="Search a movie"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button type="submit">Search</button>
+        <button
+          type="submit"
+          className="ms-2 btn btn-outline-light "
+          // style={{ backgroundColor: "#0d47a1" }}
+        >
+          Search
+        </button>
       </form>
       <div className="movie-container">
         {movies.map((movie) => (
