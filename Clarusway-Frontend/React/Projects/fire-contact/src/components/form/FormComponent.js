@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Form, Segment, Button } from "semantic-ui-react";
 import { options } from "../../utils/constants";
-import { successNote } from "./customTostify";
 
 const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
   const handleInputChange = (e) => {
