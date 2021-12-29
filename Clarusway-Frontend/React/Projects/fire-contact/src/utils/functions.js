@@ -1,4 +1,4 @@
-// import firebase from "./firebase";
+import firebase from "./firebase";
 import { useState, useEffect } from "react";
 import {
   getDatabase,
@@ -7,7 +7,7 @@ import {
   set,
   onValue,
   query,
-  remove,
+  // remove,
   child,
   update,
 } from "firebase/database";
@@ -50,15 +50,20 @@ export const useFetch = () => {
 
 export const deleteInfo = (id) => {
   const db = getDatabase();
-  // const userRef = ref(db, 'contact');
-  remove(ref(db, "contact/" + id));
   successNote("Deleted");
+  const deleteUserKey = push(child(ref(db), "contact")).id;
+  // const userRef = ref(db, 'contact');
+  // remove(ref(db, "/contact/" + id));
+  const updates = {};
+  updates["/contact/" + deleteUserKey] = null;
+
+  return update(ref(db), updates);
 };
 
 export const updateInfo = (info) => {
   const db = getDatabase();
-  const newUserKey = push(child(ref(db), "contact/")).key;
+  const newUserKey = push(child(ref(db), "contact")).id;
   const updates = {};
-  updates["contact/" + newUserKey] = info;
+  updates["/contact/" + newUserKey] = info;
   return update(ref(db), updates);
 };
