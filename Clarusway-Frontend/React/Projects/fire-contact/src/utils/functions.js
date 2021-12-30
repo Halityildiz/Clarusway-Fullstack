@@ -7,7 +7,7 @@ import {
   set,
   onValue,
   query,
-  // remove,
+  remove,
   child,
   update,
 } from "firebase/database";
@@ -47,17 +47,16 @@ export const useFetch = () => {
   }, []);
   return { isLoading, contactList };
 };
-
 export const deleteInfo = (id) => {
   const db = getDatabase();
-  successNote("Deleted");
-  const deleteUserKey = push(child(ref(db), "contact")).id;
   // const userRef = ref(db, 'contact');
-  // remove(ref(db, "/contact/" + id));
-  const updates = {};
-  updates["/contact/" + deleteUserKey] = null;
+  if (id == null) {
+    remove(ref(db, "/contact/" + undefined));
+  } else {
+    remove(ref(db, "/contact/" + id));
+  }
 
-  return update(ref(db), updates);
+  successNote("Deleted");
 };
 
 export const updateInfo = (info) => {
@@ -65,5 +64,6 @@ export const updateInfo = (info) => {
   const newUserKey = push(child(ref(db), "contact")).id;
   const updates = {};
   updates["/contact/" + newUserKey] = info;
+  successNote("Updated");
   return update(ref(db), updates);
 };
