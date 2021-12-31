@@ -50,11 +50,11 @@ export const useFetch = () => {
 export const deleteInfo = (id) => {
   const db = getDatabase();
   // const userRef = ref(db, 'contact');
-  if (id == null) {
-    remove(ref(db, "/contact/" + undefined));
-  } else {
-    remove(ref(db, "/contact/" + id));
-  }
+  // if (undefined) {
+  remove(ref(db, "/contact/" + undefined));
+  // } else {
+  remove(ref(db, "/contact/" + id));
+  // }
 
   successNote("Deleted");
 };
