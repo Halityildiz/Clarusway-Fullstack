@@ -16,7 +16,7 @@ const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
 
   return (
     <Grid textAlign="center" verticalAlign="middle">
-      <Grid.Column style={{ width: 300 }}>
+      <Grid.Column style={{ width: 400 }}>
         <div className="ui piled segments">
           <div className="ui segment brand">
             <a
@@ -25,14 +25,19 @@ const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <code>{"<Clarusway/> "}</code>
+              <img
+                src="https://i.pinimg.com/564x/e3/f9/c4/e3f9c42f3b449e72123466082ae3eb18.jpg"
+                alt="Logo"
+                class="logo"
+              />
+              {/* <code>{"<Clarusway/> "}</code> */}
             </a>
             <span className="design header">design</span>
           </div>
         </div>
         <h2 className="contact-header">Add Contact</h2>
         <Form size="large" onSubmit={handleFormSubmit}>
-          <Segment stacked>
+          <Segment stacked style={{ fontSize: "18px" }}>
             <Form.Input
               fluid
               name="username"
