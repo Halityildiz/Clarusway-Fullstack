@@ -5,7 +5,12 @@ const Contacts = ({ editHandler }) => {
   const { contactList, isLoading } = useFetch();
   return (
     <div>
-      <h2 className="contact-header">Contacts</h2>
+      <h2
+        style={{ backgroundColor: "teal", color: "#fff" }}
+        className="contact-header"
+      >
+        Contacts
+      </h2>
       <Table size={"large"} className="table">
         <Table.Header>
           <Table.Row>

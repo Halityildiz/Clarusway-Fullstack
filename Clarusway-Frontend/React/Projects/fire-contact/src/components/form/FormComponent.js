@@ -18,7 +18,15 @@ const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
     <Grid textAlign="center" verticalAlign="middle">
       <Grid.Column style={{ width: 400 }}>
         <div className="ui piled segments">
-          <div className="ui segment brand">
+          <div
+            style={{
+              backgroundColor: "teal",
+              color: "#fff",
+              border: "transparent",
+              borderRadius: "0px",
+            }}
+            className="ui segment brand"
+          >
             <a
               href="https://github.com/clarusway"
               className="design"
@@ -32,10 +40,20 @@ const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
               />
               {/* <code>{"<Clarusway/> "}</code> */}
             </a>
-            <span className="design header">design</span>
+            <span
+              style={{ letterSpacing: "3px", fontSize: "32px" }}
+              className="design header"
+            >
+              Halatsar Design
+            </span>
           </div>
         </div>
-        <h2 className="contact-header">Add Contact</h2>
+        <h2
+          style={{ backgroundColor: "teal", color: "#fff" }}
+          className="contact-header"
+        >
+          Add Contact
+        </h2>
         <Form size="large" onSubmit={handleFormSubmit}>
           <Segment stacked style={{ fontSize: "18px" }}>
             <Form.Input
@@ -68,7 +86,16 @@ const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
               value={info.gender.toUpperCase()}
               required
             />
-            <Button color="teal" fluid size="large">
+            <Button
+              style={{
+                color: "#fff",
+                backgroundColor: "teal",
+                fontSize: "24px",
+              }}
+              color="teal"
+              fluid
+              size="large"
+            >
               Add
             </Button>
           </Segment>

@@ -58,7 +58,7 @@ code {
 
 .edit {
   cursor: pointer;
-  color: #9136e7;
+  color: teal;
 }
 
 .delete {
@@ -96,7 +96,7 @@ code {
   border-radius: 50%;
   background-color: #ebceb7;
 
-  margin: auto;
+  margin: 0px auto 10px;
 }
 .logo:hover {
   transition: all 0.3s linear;
