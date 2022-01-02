@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Table, Icon } from "semantic-ui-react";
 import { deleteInfo, useFetch } from "../../utils/functions";
 
