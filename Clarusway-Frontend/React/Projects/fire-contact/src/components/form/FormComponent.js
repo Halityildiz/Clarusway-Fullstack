@@ -28,7 +28,7 @@ const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
             className="ui segment brand"
           >
             <a
-              href="https://github.com/clarusway"
+              href="https://github.com/Halityildiz/Halatsar-FireContact"
               className="design"
               target="_blank"
               rel="noopener noreferrer"
