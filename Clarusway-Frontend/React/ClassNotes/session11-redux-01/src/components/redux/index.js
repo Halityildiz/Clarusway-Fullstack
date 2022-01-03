@@ -1,5 +1,3 @@
-const initialState= {
-  counter: 0
-}
-
-const
+const initialState = {
+  counter: 0,
+};
