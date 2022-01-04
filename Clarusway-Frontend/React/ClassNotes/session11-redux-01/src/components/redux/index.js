@@ -16,6 +16,7 @@ const reducer = (state = initialState, action) => {
         counter: 0,
       };
     default:
-      break;
+      return state;
   }
 };
+export default reducer;
