@@ -8,7 +8,7 @@ const Header = React.memo(({ img }) => {
       <img
         src={img ? img : cw}
         alt="CW_logo"
-        style={{ margin: "4rem", maxHeight: "200px" }}
+        style={{ margin: "5rem", maxHeight: "200px" }}
       />
     </div>
   );
