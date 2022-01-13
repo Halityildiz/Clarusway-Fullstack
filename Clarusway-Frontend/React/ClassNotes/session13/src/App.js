@@ -21,7 +21,7 @@ function App() {
   const [text, setText] = useState("");
   // console.log("text", text);
   const [search, setSearch] = useState("");
-  console.log("search", search);
+  // console.log("search", search);
   // const inputRef = useRef(null);
 
   useEffect(() => {
