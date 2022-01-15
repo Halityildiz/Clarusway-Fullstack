@@ -17,7 +17,7 @@ function App() {
   // const [count, setCount] = useState(0);
   // const [img, setImg] = useState(null);
   const [users, setUsers] = useState([]);
-  console.log({ users });
+  // console.log({ users });
   const [text, setText] = useState("");
   console.log("text", text);
   const [search, setSearch] = useState("");
