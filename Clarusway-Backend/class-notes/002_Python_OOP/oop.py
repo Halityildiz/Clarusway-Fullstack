@@ -16,49 +16,49 @@ test = [123, 'Barry', [1, 2, 3], (1, 2, 3), {1, 2, 3}, True, lambda x: x, {
 # # Definig Classes
 
 
-class Person:
-    name = 'Barry'
-    age = 44
-
-
-person1 = Person()
-person2 = Person()
-
-print(person1.name)
-print(person2.name)
-
-Person.job = "teacher"
-print(person1.job)
-print(person2.job)
-
-# # Class attributes ve instance attributes
-# Person.name = 'Rafe'
-person1.name = 'Henry'
-print(person1.name)
-print(person2.name)
-
-# # SELF Keyword
 # class Person:
 #     name = 'Barry'
 #     age = 44
 
-#     def test(self):
-#         print('test')
-
-#     def get_details(self):
-#         print('name: ', self.name, 'age', self.age, 'location :', self.location)
-
-#     def set_details(self, name, age, location):
-#         self.name = name
-#         self.age = age
-#         self.location = location
-
 
 # person1 = Person()
+# person2 = Person()
+
+# print(person1.name)
+# print(person2.name)
+
+# Person.job = "teacher"
+# print(person1.job)
+# print(person2.job)
+
+# # # Class attributes ve instance attributes
+# # Person.name = 'Rafe'
+# person1.name = 'Henry'
+# print(person1.name)
+# print(person2.name)
+
+# SELF Keyword
+class Person:
+    name = 'Barry'
+    age = 44
+
+    def test(self):
+        print('test')
+
+    def get_details(self):
+        print('name: ', self.name, 'age:', self.age, 'location :', self.location)
+
+    def set_details(self, name, age, location):
+        self.name = name
+        self.age = age
+        self.location = location
+
+
+person1 = Person()
 # person1.test()
 # Person.test(person1)
-# person1.set_details('Henry', 38, 'Ankara')
-# person1.get_details()
+person1.set_details('Henry', 38, 'Ankara')
+person1.get_details()
 
 # class Person:
 #     name = 'Barry'
