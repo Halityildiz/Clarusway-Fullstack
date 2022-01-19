@@ -1,41 +1,41 @@
-from django.db import models
+# from django.db import models
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
 
-# def printtype(data):
-#     for i in data:
-#         print(i, type(i))
+def print_type(data):
+    for i in data:
+        print(i, type(i))
 
 
-# test = [123, 'Barry', [1, 2, 3], (1, 2, 3), {1, 2, 3}, True, lambda x: x, {
-#     "name": 'henry', "age": 38}]
+test = [123, 'Barry', [1, 2, 3], (1, 2, 3), {1, 2, 3}, True, lambda x: x, {
+    "name": 'Barry', "age": 44}]
 
-# # printtype(test)
+# print_type(test)
 
 # # Definig Classes
 
 
-# class Person:
-#     name = 'Barry'
-#     age = 44
+class Person:
+    name = 'Barry'
+    age = 44
 
 
-# person1 = Person()
-# person2 = Person()
+person1 = Person()
+person2 = Person()
 
-# print(person1.name)
-# print(person2.name)
+print(person1.name)
+print(person2.name)
 
-# Person.job = "teacher"
-# print(person1.job)
-# print(person2.job)
+Person.job = "teacher"
+print(person1.job)
+print(person2.job)
 
 # # Class attributes ve instance attributes
 # Person.name = 'Rafe'
-# person1.name = 'Henry'
-# print(person1.name)
-# print(person2.name)
+person1.name = 'Henry'
+print(person1.name)
+print(person2.name)
 
 # # SELF Keyword
 # class Person:
@@ -211,11 +211,11 @@ class Customer:
         # print(total)
 
 
-custom = Customer('barry', 44)
-print(custom)
-custom.add_movement(5000, '15.10.2021', 'Salary')
-custom.add_movement(-1000, '16.10.2021', 'Rent')
-custom.add_movement(-500, '16.10.2021', 'Bills')
-custom.add_movement(-2000, '16.10.2021', 'Credit Card')
-custom.all_movements()
-print(custom.balance())
+# custom = Customer('barry', 44)
+# print(custom)
+# custom.add_movement(5000, '15.10.2021', 'Salary')
+# custom.add_movement(-1000, '16.10.2021', 'Rent')
+# custom.add_movement(-500, '16.10.2021', 'Bills')
+# custom.add_movement(-2000, '16.10.2021', 'Credit Card')
+# custom.all_movements()
+# print(custom.balance())
