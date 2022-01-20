@@ -148,9 +148,9 @@ class Person:
     def get_details(self):
         print("name", self.name, self.age)
 
-# class Lang:
-#     def __init__(self, langs):
-#         self.langs = langs
+class Lang:
+    def __init__(self, langs):
+        self.langs = langs
     
 
 # class Employee(Person, Lang):
