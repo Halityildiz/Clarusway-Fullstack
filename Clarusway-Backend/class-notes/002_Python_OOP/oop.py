@@ -135,22 +135,22 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 # inheritance and polymorphism
 
-class Person:
-    company = "Clarusway"
+# class Person:
+#     company = "Clarusway"
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-    def __str__(self):
-        return f"Name: {self.name}      Age : {self.age}"
+#     def __str__(self):
+#         return f"Name: {self.name}      Age : {self.age}"
 
-    def get_details(self):
-        print("name", self.name, self.age)
+#     def get_details(self):
+#         print("name", self.name, self.age)
 
-class Lang:
-    def __init__(self, langs):
-        self.langs = langs
+# class Lang:
+#     def __init__(self, langs):
+#         self.langs = langs
     
 
 # class Employee(Person, Lang):
