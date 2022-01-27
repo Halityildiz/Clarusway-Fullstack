@@ -367,21 +367,19 @@ Websites generally need to serve additional files such as images, JavaScript, or
 
 Django provides ```django.contrib.staticfiles``` to help you manage them, this collects static files from each of your applications (and any other places you specify) into a single location that can easily be served in production.
 
-Using the ```collectstatic``` command, Django looks for all static files in your apps and collects them wherever you told it to, i.e. the ```STATIC_ROOT``` .
-
-- Create a folder named ```static```. 
-- Need to tell Django that this is the folder to look when a static folder is used. 
-- Open settings.py, under STATIC_URL variable add;
-
+- Settings on settings.py about static files:
 ```py
-STATICFILES_LIST = [ BASE_DIR / 'static', ]
+# Default place which Django will look for static files in everywhere:
+STATIC_URL = 'static/'
+
+# Base static files, or files from different directories:
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+# The directory for static files collected together after collectstatic command:
+STATIC_ROOT = "staticfiles-cdn/"
 ```
-
-- Create a folder under static named ```css```, this will be the place for our css files.
-
-- Create a ```style.css``` file and add some css to test.
-
-- Check the differences from home page.
 
 - A basic example for a template using static files is:
 ```html
