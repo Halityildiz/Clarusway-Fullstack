@@ -14,8 +14,8 @@ def todo_list (request):
   }
   return render
 
-# def todo_add (request):
-#   form = TodoForm()
+def todo_add (request):
+  form = TodoForm()
   
   if request.method == "POST":
     form =TodoForm(request.POST)
