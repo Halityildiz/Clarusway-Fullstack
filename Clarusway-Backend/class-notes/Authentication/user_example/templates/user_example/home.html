@@ -1,6 +1,6 @@
 <h1>Home Page</h1>
 
-Hello {{user.username|title }}!
+Hello {{user.username | title }}!
 <hr />
 <br />
 
@@ -9,4 +9,6 @@ Hello {{user.username|title }}!
 
 {% else %}
 <a href="{% url 'login' %} ">Login</a>
+<br />
+<a href="{% url 'register' %} ">Register</a>
 {% endif %}
