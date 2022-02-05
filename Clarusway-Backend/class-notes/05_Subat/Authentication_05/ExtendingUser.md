@@ -100,17 +100,13 @@ base.html
   <body>
     {% include "users/navbar.html" %}
     <div style="margin-top: 100px; margin-bottom: 100px" class="container">
-            {% if messages %} 
-        {% for message in messages %} 
-            {% if message.tags == "error" %}
-                <div class="alert alert-danger">{{ message }}</div>
-            {% else %}
-                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
-            {% endif %} 
-        {% endfor %} 
-      {% endif %} 
-      {% block content %} 
-      {% endblock content %}
+      {% if messages %} {% for message in messages %} {% if message.tags ==
+      "error" %}
+      <div class="alert alert-danger">{{ message }}</div>
+      {% else %}
+      <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+      {% endif %} {% endfor %} {% endif %} {% block content %} {% endblock
+      content %}
     </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -201,7 +197,11 @@ navbar.html
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand" href="{% url 'home'  %}"
-    ><img src="{% static 'users/images/cw_logo.jpg' %}" alt="CLARUSWAY_LOGO" style="width: 50px; height: 50px;"/>
+    ><img
+      src="{% static 'users/images/cw_logo.jpg' %}"
+      alt="CLARUSWAY_LOGO"
+      style="width: 50px; height: 50px;"
+    />
 
     Clarusway FS</a
   >
