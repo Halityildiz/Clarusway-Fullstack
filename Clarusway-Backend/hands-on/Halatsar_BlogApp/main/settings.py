@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
 
     # third party
-    'crispy_forms'
+    'crispy_forms',
+    'bootstrap4',
+    
 ]
 
 MIDDLEWARE = [
@@ -131,7 +133,7 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 
 MEDIA_ROOT = BASE_DIR / "media_root"
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = "blog:list"
 
