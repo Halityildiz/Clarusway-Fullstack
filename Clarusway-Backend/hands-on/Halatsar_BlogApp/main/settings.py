@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -38,12 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # my_apps
-    'blog.apps.BlogConfig',
-    'users.apps.UsersConfig',
-
-    # third party
-    'crispy_forms',
+ # 'blog.apps.BlogConfig',
+    "blog",
+    "users",
+    # third party,
+    "crispy_forms",
     'bootstrap4',
     
 ]
@@ -112,9 +113,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = "UTC"
 
 USE_I18N = True
 
@@ -140,14 +141,15 @@ LOGIN_REDIRECT_URL = "blog:list"
 LOGIN_URL = "login"
 
 # Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+# # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+# STATIC_URL = "/static/"
+# MEDIA_URL = "/media/"
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static"
+# ]  # src altında static adlı folder açıp staticlerini orada tutmak istersen bu şekilde yaz!
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = config("EMAIL_USER")
-# EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
+# MEDIA_ROOT = BASE_DIR / "media_root"
+# CRISPY_TEMPLATE_PACK = "bootstrap4"
+# # EMAIL_HOST_USER = config("EMAIL_USER")
+# # EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
 

@@ -24,8 +24,7 @@ def register(request):
 def profile(request):
     # obj = User.objects.get(id=id)
     u_form = UserUpdateForm(request.POST or None, instance=request.user)
-    p_form = ProfileUpdateForm(
-        request.POST or None, request.FILES or None, instance=request.user.profile)
+    p_form = ProfileUpdateForm(request.POST or None, request.FILES or None, instance=request.user.profile)
 
     if u_form.is_valid() and p_form.is_valid():
         u_form.save()
