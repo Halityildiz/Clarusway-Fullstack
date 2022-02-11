@@ -5,8 +5,10 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .forms import StudentForm
 from .models import Student
-from django.views.generic import TemplateView, ListView, DetailView, CreateView
+from django.views.generic import TemplateView, ListView, DetailView, CreateView,  UpdateView, DeleteView
 from django.urls import reverse_lazy
+from django.contrib.messages.views import SuccessMessageMixin
+
 
 def home(request):
   return render(request, "fscohort/home.html")
