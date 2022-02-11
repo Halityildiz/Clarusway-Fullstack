@@ -1,21 +1,31 @@
 from multiprocessing import context
+from pyexpat import model
+from re import template
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .forms import StudentForm
 from .models import Student
+from django.views.generic import TemplateView, ListView, DetailView, CreateView
+from django.urls import reverse_lazy
 
 def home(request):
   return render(request, "fscohort/home.html")
 # Create your views here.
+class HomeView(TemplateView):
+  template_name = "fscohort/home.html"
 
 
 def student_list(request):
-  students = Student.objects.all()
-  
+  students = Student.objects.all()  
   context = {
     "students":students
   }
   return render(request, "fscohort/student_list.html", context)
+class StudentListView(ListView):
+  model = Student
+  context_object_name = "students"
+  paginate_by = 10
+
 
 def student_add(request):
   form = StudentForm()
@@ -24,21 +34,33 @@ def student_add(request):
     form = StudentForm(request.POST, request.FILES)
     if form.is_valid():
       form.save()
-      return redirect("list")
-    
+      return redirect("list")    
   context = {
     "form" : form
-  }
-  
+  }  
   return render(request, "fscohort/student_add.html", context)
 
+class StudentCreateView(CreateView):
+  model = Student
+  form_class = StudentForm
+  template_name = "fscohort/student_add.html"
+  success_url = reverse_lazy("list")
+  
+  def form_valid(self, form):
+    self.object = form.save()
+    if not self.object.number:
+      return super(form)  
+  
 def student_detail(request, id):
   student = Student.objects.get(id=id)
   context = {
     "student": student
-  }
-  
+  }  
   return render(request, "fscohort/student_detail.html", context)
+
+class StudentDetailView(DetailView):
+  model = Student
+  pk_url_kwarg = 'id'
 
 def student_update(request, id):
 
