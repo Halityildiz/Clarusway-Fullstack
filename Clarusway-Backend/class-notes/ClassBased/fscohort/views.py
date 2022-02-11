@@ -42,16 +42,22 @@ def student_add(request):
   }  
   return render(request, "fscohort/student_add.html", context)
 
-class StudentCreateView(CreateView):
-  model = Student
-  form_class = StudentForm
-  template_name = "fscohort/student_add.html"
-  success_url = reverse_lazy("list")
-  
-  def form_valid(self, form):
-    self.object = form.save()
-    if not self.object.number:
-      return super(form)  
+class StudentCreateView(SuccessMessageMixin, CreateView):
+    model = Student
+    form_class = StudentForm
+    template_name = "fscohort/student_add.html"
+    success_url = reverse_lazy("list")
+    success_message = "Student added successfully"
+
+    def form_valid(self, form):
+        """If the form is valid, save the associated model."""
+        self.object = form.save()
+        # if not self.object.number:
+        #     self.object.number = 9999
+        self.object.first_name = self.object.first_name.title()
+        self.object.last_name = self.object.last_name.title()
+        self.object.save()
+        return super().form_valid(form)
   
 def student_detail(request, id):
   student = Student.objects.get(id=id)
@@ -83,6 +89,13 @@ def student_update(request, id):
     }
 
     return render(request, "fscohort/student_update.html", context)
+  
+class StudentUpdateView(UpdateView):
+    model = Student
+    form_class = StudentForm
+    template_name = "fscohort/student_update.html"
+    success_url = '/student_list/'
+  
 
 def student_delete(request, id):
 
