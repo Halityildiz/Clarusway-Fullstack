@@ -98,3 +98,7 @@ def student_delete(request, id):
         "student":student
     }
     return render(request, "fscohort/student_delete.html",context)
+class StudentDeleteView(DeleteView):
+    model = Student
+    template_name = "fscohort/student_delete.html"
+    success_url = reverse_lazy("list")
