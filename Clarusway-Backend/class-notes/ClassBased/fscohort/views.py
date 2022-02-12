@@ -13,8 +13,8 @@ from django.contrib.messages.views import SuccessMessageMixin
 def home(request):
   return render(request, "fscohort/home.html")
 # Create your views here.
-# class HomeView(TemplateView):
-#   template_name = "fscohort/home.html"
+class HomeView(TemplateView):
+  template_name = "fscohort/home.html"
 
 
 def student_list(request):
