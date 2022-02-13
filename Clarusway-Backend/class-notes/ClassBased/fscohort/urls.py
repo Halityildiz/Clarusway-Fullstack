@@ -12,7 +12,7 @@ urlpatterns = [
     # path("student_add/", student_add, name= "add"),
     path("student_add/", StudentCreateView.as_view(), name= "add"),
     # path("detail/<int:id>", student_detail, name= "detail"),
-    path("detail/<int:id>", StudentDetailView.as_view(), name= "detail"),
+    # path("detail/<int:id>", StudentDetailView.as_view(), name= "detail"),
     path("update/<int:id>", student_update, name= "update"),
     path("delete/<int:id>", student_delete, name= "delete")
 ] 
