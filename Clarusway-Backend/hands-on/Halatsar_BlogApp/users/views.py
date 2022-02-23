@@ -32,9 +32,9 @@ def profile(request):
         messages.success(request, "Your profile has been updated!!")
         return redirect(request.path)
 
-    # context = {
-    #     "u_form": u_form,
-    #     "p_form": p_form
-    # }
+    context = {
+        "u_form": u_form,
+        "p_form": p_form
+    }
 
     return render(request, "users/profile.html", context)
