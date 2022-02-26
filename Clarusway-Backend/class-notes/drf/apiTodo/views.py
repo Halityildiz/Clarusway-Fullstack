@@ -38,24 +38,24 @@ def home(request):
 #     return Response(serializer.data)
 
 
-@api_view(["GET", "POST"])
-def todoListCreate(request):
+# @api_view(["GET", "POST"])
+# def todoListCreate(request):
 
-    if request.method == "GET":
+#     if request.method == "GET":
 
-        queryset = Todo.objects.all()
-        serializer = TodoSerializer(queryset, many=True)
+#         queryset = Todo.objects.all()
+#         serializer = TodoSerializer(queryset, many=True)
 
-        return Response(serializer.data)
+#         return Response(serializer.data)
 
-    elif request.method == "POST":
+#     elif request.method == "POST":
 
-        serializer = TodoSerializer(data=request.data)
+#         serializer = TodoSerializer(data=request.data)
 
-        if serializer.is_valid():
-            serializer.save()
+#         if serializer.is_valid():
+#             serializer.save()
 
-        return Response(serializer.data)
+#         return Response(serializer.data)
 
 
 # @api_view(["GET"])
