@@ -16,8 +16,8 @@ urlpatterns = [
     # path("todolist/", todolist),
     # path("todocreate/", todocreate),
     path("todoListCreate/", todoListCreate),
-    # path("todo_detail/<int:pk>/", todo_detail),
-    # path("todo_update/<int:pk>/", todo_update),
-    # path("todo_delete/<int:pk>/", todo_delete),
+    path("todo_detail/<int:pk>/", todo_detail),
+    path("todo_update/<int:pk>/", todo_update),
+    path("todo_delete/<int:pk>/", todo_delete),
     path("todo_detail/<int:pk>/", todo_detail),
 ]
