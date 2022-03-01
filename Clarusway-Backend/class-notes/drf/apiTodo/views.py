@@ -67,29 +67,29 @@ def todoListCreate(request):
 #     return Response(serializer.data)
 
 
-@api_view(["GET", "PUT", "DELETE"])
-def todo_detail(request, pk):
+# @api_view(["GET", "PUT", "DELETE"])
+# def todo_detail(request, pk):
 
-    if request.method == "GET":
+#     if request.method == "GET":
 
-        queryset = Todo.objects.get(id=pk)
-        serializer = TodoSerializer(queryset)
+#         queryset = Todo.objects.get(id=pk)
+#         serializer = TodoSerializer(queryset)
 
-        return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
+#         return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
 
-    elif request.method == "PUT":
+#     elif request.method == "PUT":
 
-        queryset = Todo.objects.get(id=pk)
-        serializer = TodoSerializer(instance=queryset, data=request.data)
+#         queryset = Todo.objects.get(id=pk)
+#         serializer = TodoSerializer(instance=queryset, data=request.data)
 
-        if serializer.is_valid():
-            serializer.save()
-        return Response(serializer.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#         return Response(serializer.data)
 
-    elif request.method == "DELETE":
-        queryset = Todo.objects.get(id=pk)
-        queryset.delete()
-        return Response("Item deleted", status=status.HTTP_204_NO_CONTENT)
+#     elif request.method == "DELETE":
+#         queryset = Todo.objects.get(id=pk)
+#         queryset.delete()
+#         return Response("Item deleted", status=status.HTTP_204_NO_CONTENT)
 
 
 # @api_view(["DELETE"])
