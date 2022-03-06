@@ -86,10 +86,10 @@ def todo_detail(request, pk):
     #         serializer.save()
     #     return Response(serializer.data)
 
-    elif request.method == "DELETE":
-        queryset = Todo.objects.get(id=pk)
-        queryset.delete()
-        return Response("Item deleted", status=status.HTTP_204_NO_CONTENT)
+    # elif request.method == "DELETE":
+    #     queryset = Todo.objects.get(id=pk)
+    #     queryset.delete()
+    #     return Response("Item deleted", status=status.HTTP_204_NO_CONTENT)
 
 
 # @api_view(["DELETE"])
