@@ -68,14 +68,14 @@ def todoListCreate(request):
 
 
 @api_view(["GET", "PUT", "DELETE"])
-def todo_detail(request, pk):
+# def todo_detail(request, pk):
 
-    if request.method == "GET":
+#     if request.method == "GET":
 
-        queryset = Todo.objects.get(id=pk)
-        serializer = TodoSerializer(queryset)
+#         queryset = Todo.objects.get(id=pk)
+#         serializer = TodoSerializer(queryset)
 
-        return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
+#         return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
 
     elif request.method == "PUT":
 
