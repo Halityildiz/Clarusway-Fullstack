@@ -77,14 +77,14 @@ def todoListCreate(request):
 
 #         return Response(serializer.data, status=status.HTTP_202_ACCEPTED)
 
-    elif request.method == "PUT":
+    # elif request.method == "PUT":
 
-        queryset = Todo.objects.get(id=pk)
-        serializer = TodoSerializer(instance=queryset, data=request.data)
+    #     queryset = Todo.objects.get(id=pk)
+    #     serializer = TodoSerializer(instance=queryset, data=request.data)
 
-        if serializer.is_valid():
-            serializer.save()
-        return Response(serializer.data)
+    #     if serializer.is_valid():
+    #         serializer.save()
+    #     return Response(serializer.data)
 
     elif request.method == "DELETE":
         queryset = Todo.objects.get(id=pk)
